@@ -1,11 +1,11 @@
 @import "tailwindcss";
 :root {
   --text: #6b6375;
-  --text-h: #08060d;
+  --text-h: #36443e;
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
+  --color-accent: #36443e;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -29,4 +29,29 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+a {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "JostVariable";
+  src: url("./assets/Jost-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairVariable";
+  src: url("./assets/Playfair-VariableFont_opsz,wdth,wght.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@theme {
+  --font-body: "JostVariable";
+  --font-callout: "PlayfairVariable";
+  --color-accent: var(--color-accent);
 }
