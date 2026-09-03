@@ -10,9 +10,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div>
     <nav
       class="grow shrink-0 basis-auto flex items-center justify-center gap-16 justify-self-stretch "
     >
-      <a>About</a>
-      <a>Services</a>
-      <a>Pricing</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
     </nav>
     <div class="grow-0 shrink-0 basis-auto">
       <a>Get in touch</a>
@@ -38,7 +38,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div>
       </div>
     </div>
     <div>
-      <h2 class="text-2xl font-bold font-callout text-accent">About</h2>
+      <h2 class="text-2xl font-bold font-callout text-accent" id="about">
+        About
+      </h2>
       <p class="text-accent">
         lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
         voluptatum assumenda dolorem deleniti id excepturi laboris duis commodo
@@ -47,7 +49,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div>
     </div>
 
     <div>
-      <h2 class="text-2xl font-bold font-callout text-accent">Services</h2>
+      <h2 class="text-2xl font-bold font-callout text-accent" id="services">
+        Services
+      </h2>
       <p class="text-accent">
         lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
         voluptatum assumenda dolorem deleniti id excepturi laboris duis commodo
@@ -56,7 +60,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div>
     </div>
 
     <div>
-      <h2 class="text-2xl font-bold font-callout text-accent">Pricing</h2>
+      <h2 class="text-2xl font-bold font-callout text-accent" id="pricing">
+        Pricing
+      </h2>
       <p class="text-accent">
         lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
         voluptatum assumenda dolorem deleniti id excepturi laboris duis commodo
