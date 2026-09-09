@@ -5,8 +5,10 @@
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
+  --color-text: #fff;
   --color-accent: #36443e;
-  --accent-bg: rgba(170, 59, 255, 0.1);
+  --color-accent-hover: #303432;
+  --color-accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
@@ -42,16 +44,32 @@ a {
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: "PlayfairVariable";
   src: url("./assets/Playfair-VariableFont_opsz,wdth,wght.woff2")
     format("woff2");
   font-weight: 100 900;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: "CrimsonTextSemiBold";
+  src: url("./assets/CrimsonText-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "CrimsonTextRegular";
+  src: url("./assets/CrimsonText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @theme {
   --font-body: "JostVariable";
-  --font-callout: "PlayfairVariable";
+  --font-header: "CrimsonTextSemiBold";
+  --font-callout: "CrimsonTextRegular";
   --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
 }
