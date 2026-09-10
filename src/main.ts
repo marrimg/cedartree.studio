@@ -1,22 +1,18 @@
 import "./style.css";
-import typescriptLogo from "./assets/cts-logo.svg";
+import typescriptLogo from "./assets/cts-logo";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   class="relative"
 >
-  <header class="font-medium h-[95px] top-0 left-0 right-0 z-50">
-    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch">
+  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50">
+    <nav
+      class="grow shrink-0 basis-auto flex flex-col justify-self-stretch bg-accent-secondary  text-light"
+    >
       <div
-        class="flex items-center justify-between gap-16 w-full h-[95px] px-8"
+        class="flex items-center justify-between gap-16 w-full h-[75px] px-8"
       >
-        <div class="grow-0 shrink-0 basis-auto">
-          <img
-            src="${typescriptLogo}"
-            class="w-[225px] h-auto"
-            alt="CTS Logo"
-          />
-        </div>
+        <div class="grow-0 shrink-0 basis-auto w-40">${typescriptLogo}</div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
           <div class="flex items-center justify-center gap-16 flex-1">
             <a href="#about" class="menu-item hover:text-accent-hover">About</a>
@@ -79,12 +75,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     >
       <div class="absolute inset-0 bg-accent-light/60"></div>
       <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
-        <h1
-          class="font-heading text-7xl font-header text-on-dark-bg text-center"
-        >
+        <h1 class="font-heading text-7xl font-header text-center text-white">
           Human-centered web design
         </h1>
-        <p class="font-callout text-on-dark-bg text-2xl text-center">
+        <p class="font-callout text-2xl text-center text-white">
           lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
           voluptatum assumenda dolorem deleniti id excepturi laboris duis
           commodo rerum ullamco amet distinctio mollit tempor in in deserunt
