@@ -76,9 +76,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       class="h-[calc(100dvh-110px)] relative grid grid-cols-1 lg:grid-cols-2"
     >
       <div
-        class="flex items-center content-center justify-center bg-cover bg-center bg-no-repeat bg-[url('./assets/watercolor-paper.jpg')]"
+        class="flex items-center content-center justify-center relative bg-cover bg-center bg-no-repeat bg-[url('./assets/watercolor-paper.jpg')]"
       >
-        <div class="absolute inset-0 bg-accent-dark/60"></div>
+        <div class="absolute inset-0 bg-accent-dark/65"></div>
         <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
           <h1
             class="font-heading text-7xl font-header text-center text-accent-secondary"
@@ -101,8 +101,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
       </div>
       <div
-        class="bg-cover bg-center bg-no-repeat bg-[url('./assets/v-lese.jpg')]"
-      ></div>
+        class="bg-cover bg-center relative bg-no-repeat bg-[url('./assets/v-lese.jpg')]"
+      >
+        <div class="absolute inset-0 bg-accent-hover/40"></div>
+      </div>
     </section>
     <section class="bg-accent-secondary text-accent p-8 grid grid-cols-12">
       <div class="col-span-6 col-start-4">
