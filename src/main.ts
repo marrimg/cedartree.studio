@@ -5,7 +5,7 @@ const html = String.raw;
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   class="relative"
 >
-  <header class="ont-medium h-[95px] absolute top-0 left-0 right-0 z-50">
+  <header class="font-medium h-[95px] top-0 left-0 right-0 z-50">
     <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch">
       <div
         class="flex items-center justify-between gap-16 w-full h-[95px] px-8"
@@ -37,7 +37,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         <div class="lg:hidden flex items-center justify-center">
           <button
             id="menu-btn"
-            class="focus:outline-none text-4xl cursor-pointer"
+            class="focus:outline-none text-4xl cursor-pointer z-20"
           >
             ☰
           </button>
@@ -45,9 +45,15 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
       <div
         id="mobile-menu"
-        class="hidden lg:hidden items-center justify-center gap-16 flex-1 bg-white py-8 w-full"
+        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30 bg-white py-8 w-full"
       >
-        <div class="flex flex-col items-center justify-center gap-4">
+        <div
+          id="close-btn"
+          class="absolute top-8 right-8 text-2xl cursor-pointer"
+        >
+          ✕
+        </div>
+        <div class="flex flex-col items-center justify-center gap-16 pt-16">
           <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
           <a href="#services" class="menu-item hover:text-accent-hover"
             >Services</a
@@ -58,11 +64,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           <a href="#pricing" class="menu-item  hover:text-accent-hover"
             >Pricing</a
           >
+          <a
+            class="menu-item hover:text-accent-hover"
+            href="mailto:hello@cedartree.studio"
+            >Get in touch</a
+          >
         </div>
       </div>
     </nav>
   </header>
-  <main class="mx-auto pb-22 w-full flex flex-col pt-[95px]">
+  <main class="mx-auto pb-22 w-full flex flex-col">
     <section
       class="flex items-center content-center justify-center h-[calc(100dvh-110px)] bg-cover bg-center bg-no-repeat bg-[url('./assets/v-lese.jpg')] relative"
     >
@@ -154,14 +165,15 @@ const menuBtn = document.getElementById("menu-btn");
 const menuItems = document.querySelectorAll(".menu-item");
 const mobileMenu = document.getElementById("mobile-menu");
 
-menuBtn?.addEventListener("click", (e) => {
-  e.preventDefault();
+menuBtn?.addEventListener("click", () => {
   mobileMenu?.classList.toggle("hidden");
 });
 
+mobileMenu?.addEventListener("click", () => {
+  mobileMenu?.classList.add("hidden");
+});
 menuItems?.forEach((menuItem) => {
-  menuItem?.addEventListener("click", (e) => {
-    console.log("menu item clicked");
-    mobileMenu?.classList.toggle("hidden");
+  menuItem?.addEventListener("click", () => {
+    mobileMenu?.classList.add("hidden");
   });
 });
