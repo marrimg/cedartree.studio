@@ -1,4 +1,4 @@
-const CTSLogo = `<svg class="fill-light" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 976.66 257.36">
+const CTSLogo = `<svg class="fill-accent-light" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 976.66 257.36">
   <g>
     <g>
       <path d="M323.78,112.3c-4.79,5.12-14.49,8.61-24.4,8.61-23.31,0-39.33-15.58-39.33-39.33,0-21.9,13.84-39.33,39-39.33,9.91,0,18.19,3.16,23.21,7.74l-5.99,9.91c-4.58-3.05-9.59-5.12-17.21-5.12-14.16,0-24.84,10.24-24.84,26.8s10.79,26.8,26.36,26.8c6.43,0,12.86-2.07,18.08-6.1l5.12,10.02Z" />

@@ -7,7 +7,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
 >
   <header class="font-medium h-[75px] top-0 left-0 right-0 z-50">
     <nav
-      class="grow shrink-0 basis-auto flex flex-col justify-self-stretch bg-accent-secondary  text-light"
+      class="grow shrink-0 basis-auto flex flex-col justify-self-stretch bg-accent-secondary  text-accent-light"
     >
       <div
         class="flex items-center justify-between gap-16 w-full h-[75px] px-8"
@@ -41,7 +41,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
       <div
         id="mobile-menu"
-        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30 bg-white py-8 w-full"
+        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30 bg-accent-secondary py-8 w-full"
       >
         <div
           id="close-btn"
@@ -71,29 +71,38 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   </header>
   <main class="mx-auto pb-22 w-full flex flex-col">
     <section
-      class="flex items-center content-center justify-center h-[calc(100dvh-110px)] bg-cover bg-center bg-no-repeat bg-[url('./assets/v-lese.jpg')] relative"
+      class="h-[calc(100dvh-110px)] relative grid grid-cols-1 lg:grid-cols-2"
     >
-      <div class="absolute inset-0 bg-accent-light/60"></div>
-      <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
-        <h1 class="font-heading text-7xl font-header text-center text-white">
-          Human-centered web design
-        </h1>
-        <p class="font-callout text-2xl text-center text-white">
-          lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
-          voluptatum assumenda dolorem deleniti id excepturi laboris duis
-          commodo rerum ullamco amet distinctio mollit tempor in in deserunt
-          aute
-        </p>
-        <div class="flex items-center justify-center">
-          <a
-            href="mailto:hello@cedartree.studio"
-            class="border-2 border-white text-white px-4 py-2 text-base font-medium hover:bg-accent-hover"
-            >Get in touch</a
+      <div
+        class="flex items-center content-center justify-center bg-cover bg-center bg-no-repeat bg-[url('./assets/watercolor-paper.jpg')]"
+      >
+        <div class="absolute inset-0 bg-accent-light/60"></div>
+        <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
+          <h1
+            class="font-heading text-7xl font-header text-center text-accent-secondary"
           >
+            Human-centered web design
+          </h1>
+          <p class="font-callout text-2xl text-center text-accent-secondary">
+            lorem ipsum dolor sit amet consectetur adipiscing elit facere do
+            nihil voluptatum assumenda dolorem deleniti id excepturi laboris
+            duis commodo rerum ullamco amet distinctio mollit tempor in in
+            deserunt aute
+          </p>
+          <div class="flex items-center justify-center">
+            <a
+              href="mailto:hello@cedartree.studio"
+              class="border-2 border-white text-accent-secondary px-4 py-2 text-base font-medium hover:bg-accent-hover"
+              >Get in touch</a
+            >
+          </div>
         </div>
       </div>
+      <div
+        class="bg-cover bg-center bg-no-repeat bg-[url('./assets/v-lese.jpg')]"
+      ></div>
     </section>
-    <section class="bg-accent text-white p-8 grid grid-cols-12">
+    <section class="bg-accent-secondary text-accent p-8 grid grid-cols-12">
       <div class="col-span-6 col-start-4">
         <h2 class="text-2xl font-bold font-callout" id="about">About</h2>
         <p>
@@ -119,7 +128,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section class="bg-accent text-white p-8  grid grid-cols-12">
+    <section class="bg-accent-secondary text-accent p-8  grid grid-cols-12">
       <div class="col-span-6 col-start-4">
         <h2 class="text-2xl font-bold font-callout" id="process">
           Our Process
@@ -148,7 +157,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
   </main>
   <footer
-    class="bg-accent text-white h-42 px-12 py-12 flex justify-around items-center"
+    class="bg-accent text-accent-secondary h-42 px-12 py-12 flex justify-around items-center"
   >
     <div>@2026 Cedar Tree Studio</div>
     <div>hello@cedartree.studio</div>
