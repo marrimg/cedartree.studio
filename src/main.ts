@@ -2,36 +2,67 @@ import "./style.css";
 import typescriptLogo from "./assets/cts-logo.svg";
 import { setupCounter } from "./counter.ts";
 const html = String.raw;
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   class="relative"
 >
-  <header
-    class="flex items-center justify-center gap-4 px-12 font-medium h-[95px] absolute top-0 left-0 right-0 z-50"
-  >
-    <div class="grow-0 shrink-0 basis-auto">
-      <img src="${typescriptLogo}" class="w-[225px] h-auto" alt="CTS Logo" />
-    </div>
-    <nav
-      class="grow shrink-0 basis-auto flex items-center justify-center gap-16 justify-self-stretch "
-    >
-      <a href="#about" class="hover:text-accent-hover">About</a>
-      <a href="#services" class="hover:text-accent-hover">Services</a>
-      <a href="#process" class="hover:text-accent-hover">Our Process</a>
-      <a href="#pricing" class="hover:text-accent-hover">Pricing</a>
+  <header class="ont-medium h-[95px] absolute top-0 left-0 right-0 z-50">
+    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch">
+      <div
+        class="flex items-center justify-between gap-16 w-full h-[95px] px-8"
+      >
+        <div class="grow-0 shrink-0 basis-auto">
+          <img
+            src="${typescriptLogo}"
+            class="w-[225px] h-auto"
+            alt="CTS Logo"
+          />
+        </div>
+        <div class="hidden lg:flex items-center justify-between gap-16 w-full">
+          <div class="flex items-center justify-center gap-16 flex-1">
+            <a href="#about" class="hover:text-accent-hover">About</a>
+            <a href="#services" class="hover:text-accent-hover">Services</a>
+            <a href="#process" class="hover:text-accent-hover">Our Process</a>
+            <a href="#pricing" class="hover:text-accent-hover">Pricing</a>
+          </div>
+          <div class="grow-0 shrink-0 basis-auto hover:text-accent-hover px-12">
+            <a href="mailto:hello@cedartree.studio">Get in touch</a>
+          </div>
+        </div>
+        <div class="lg:hidden flex items-center justify-center">
+          <button
+            id="menu-btn"
+            class="focus:outline-none text-4xl cursor-pointer"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden items-center justify-center gap-16 flex-1 bg-white py-8 w-full"
+      >
+        <div class="flex flex-col items-center justify-center gap-4">
+          <a href="#about" class="hover:text-accent-hover">About</a>
+          <a href="#services" class="hover:text-accent-hover">Services</a>
+          <a href="#process" class="hover:text-accent-hover">Our Process</a>
+          <a href="#pricing" class="hover:text-accent-hover">Pricing</a>
+        </div>
+      </div>
     </nav>
-    <div class="grow-0 shrink-0 basis-auto hover:text-accent-hover">
-      <a href="mailto:hello@cedartree.studio">Get in touch</a>
-    </div>
   </header>
   <main class="mx-auto pb-22 w-full flex flex-col pt-[95px]">
-    <section class="grid grid-rows-12 grid-cols-12 h-[calc(100dvh-110px)]">
-      <div
-        class="row-span-9 row-start-3 col-span-6 col-start-4 flex flex-col gap-16"
-      >
-        <h1 class="font-heading text-7xl font-header text-accent text-center">
+    <section
+      class="flex items-center content-center justify-center h-[calc(100dvh-110px)] bg-cover bg-center bg-no-repeat bg-[url('./assets/v-lese.jpg')] relative"
+    >
+      <div class="absolute inset-0 bg-accent-light/60"></div>
+      <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
+        <h1
+          class="font-heading text-7xl font-header text-on-dark-bg text-center"
+        >
           Human-centered web design
         </h1>
-        <p class="font-callout text-accent text-2xl text-center">
+        <p class="font-callout text-on-dark-bg text-2xl text-center">
           lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
           voluptatum assumenda dolorem deleniti id excepturi laboris duis
           commodo rerum ullamco amet distinctio mollit tempor in in deserunt
@@ -40,7 +71,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         <div class="flex items-center justify-center">
           <a
             href="mailto:hello@cedartree.studio"
-            class="bg-accent text-white px-4 py-2 text-base font-medium bg-accent hover:bg-accent-hover"
+            class="border-2 border-white text-white px-4 py-2 text-base font-medium hover:bg-accent-hover"
             >Get in touch</a
           >
         </div>
@@ -108,4 +139,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   </footer>
 </div> `;
 
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
+
+menuBtn?.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("Menu button clicked");
+  menu?.classList.toggle("hidden");
+});

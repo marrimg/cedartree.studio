@@ -2,13 +2,15 @@
 :root {
   --text: #6b6375;
   --text-h: #36443e;
+  --text-light: #fff;
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --color-text: #fff;
-  --color-accent: #36443e;
-  --color-accent-hover: #303432;
-  --color-accent-bg: rgba(170, 59, 255, 0.1);
+  --color-accent: #4f321f;
+  --color-accent-light: #403408;
+  --color-accent-hover: #4f321f;
+  --color-accent-bg: #3a2f07;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
@@ -70,6 +72,8 @@ a {
   --font-body: "JostVariable";
   --font-header: "CrimsonTextSemiBold";
   --font-callout: "CrimsonTextRegular";
+  --color-on-dark-bg: var(--text-light);
+  --color-accent-light: var(--color-accent-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
 }
