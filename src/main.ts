@@ -1,6 +1,5 @@
 import "./style.css";
 import typescriptLogo from "./assets/cts-logo.svg";
-import { setupCounter } from "./counter.ts";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
@@ -20,10 +19,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
           <div class="flex items-center justify-center gap-16 flex-1">
-            <a href="#about" class="hover:text-accent-hover">About</a>
-            <a href="#services" class="hover:text-accent-hover">Services</a>
-            <a href="#process" class="hover:text-accent-hover">Our Process</a>
-            <a href="#pricing" class="hover:text-accent-hover">Pricing</a>
+            <a href="#about" class="menu-item hover:text-accent-hover">About</a>
+            <a href="#services" class="menu-item hover:text-accent-hover"
+              >Services</a
+            >
+            <a href="#process" class="menu-item hover:text-accent-hover"
+              >Our Process</a
+            >
+            <a href="#pricing" class="menu-item hover:text-accent-hover"
+              >Pricing</a
+            >
           </div>
           <div class="grow-0 shrink-0 basis-auto hover:text-accent-hover px-12">
             <a href="mailto:hello@cedartree.studio">Get in touch</a>
@@ -43,10 +48,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         class="hidden lg:hidden items-center justify-center gap-16 flex-1 bg-white py-8 w-full"
       >
         <div class="flex flex-col items-center justify-center gap-4">
-          <a href="#about" class="hover:text-accent-hover">About</a>
-          <a href="#services" class="hover:text-accent-hover">Services</a>
-          <a href="#process" class="hover:text-accent-hover">Our Process</a>
-          <a href="#pricing" class="hover:text-accent-hover">Pricing</a>
+          <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
+          <a href="#services" class="menu-item hover:text-accent-hover"
+            >Services</a
+          >
+          <a href="#process" class="menu-item  hover:text-accent-hover"
+            >Our Process</a
+          >
+          <a href="#pricing" class="menu-item  hover:text-accent-hover"
+            >Pricing</a
+          >
         </div>
       </div>
     </nav>
@@ -140,10 +151,17 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
 </div> `;
 
 const menuBtn = document.getElementById("menu-btn");
-const menu = document.getElementById("mobile-menu");
+const menuItems = document.querySelectorAll(".menu-item");
+const mobileMenu = document.getElementById("mobile-menu");
 
 menuBtn?.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log("Menu button clicked");
-  menu?.classList.toggle("hidden");
+  mobileMenu?.classList.toggle("hidden");
+});
+
+menuItems?.forEach((menuItem) => {
+  menuItem?.addEventListener("click", (e) => {
+    console.log("menu item clicked");
+    mobileMenu?.classList.toggle("hidden");
+  });
 });
