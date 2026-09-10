@@ -8,7 +8,7 @@
   --code-bg: #f4f3ec;
   --color-text: #fff;
   --color-accent: #283425;
-  --color-accent-light: #403408;
+  --color-accent-dark: #494d09;
   --color-accent-hover: #4f321f;
   --color-accent-bg: #3a2f07;
   --color-accent-secondary: #eceae0;
@@ -74,7 +74,7 @@ a {
   --font-header: "CrimsonTextSemiBold";
   --font-callout: "CrimsonTextRegular";
   --color-on-dark-bg: var(--text-light);
-  --color-accent-light: var(--color-accent-light);
+  --color-accent-dark: var(--color-accent-dark);
   --color-light: var(--text-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
