@@ -71,7 +71,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   </header>
   <main class="mx-auto pb-22 w-full flex flex-col">
     <section
-      class="h-[calc(100dvh-110px)] relative grid grid-cols-1 lg:grid-cols-2"
+      class="lg:h-[calc(100dvh-110px)] relative grid grid-cols-1 lg:grid-cols-2"
     >
       <div
         class="flex items-center content-center justify-center relative bg-cover bg-center bg-no-repeat bg-[url('./assets/watercolor-paper.jpg')]"
@@ -104,8 +104,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         <div class="absolute inset-0 bg-accent-hover/40"></div>
       </div>
     </section>
-    <section class="bg-accent-secondary text-accent p-8 flex justify-center">
-      <div class="lg:max-w-[1200px] grid grid-cols-2 gap-8">
+    <section
+      class="bg-accent-secondary text-accent p-8 flex justify-start lg:justify-center"
+    >
+      <div class="lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div></div>
         <div class="flex flex-col gap-8">
           <div>
@@ -140,15 +142,15 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
 
     <section class="p-8  grid grid-cols-12">
-      <div class="col-span-6 col-start-4">
+      <div class="lg:col-span-6 lg:col-start-4">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
           id="services"
         >
           Services
         </h2>
-        <div class="grid gap-8 grid-cols-12">
-          <div class="col-span-6">
+        <div class="grid gap-8 lg:grid-cols-12">
+          <div class="col-span-12 lg:col-span-6">
             <h2>Branding</h2>
             <p class="text-accent">
               Are you starting a new business and don't have an established
@@ -156,7 +158,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               mini-brand package to your web project and let me help!
             </p>
           </div>
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
             <h2>Web design</h2>
             <p class="text-accent">
               You don't want a site that looks like everyone else's. You're not
@@ -167,7 +169,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               your customers to that goal.
             </p>
           </div>
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
             <h2>Web development</h2>
             <p class="text-accent">
               We will work together to figure out your needs, and we will choose
@@ -175,7 +177,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               Wordpress and Squarespace.
             </p>
           </div>
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
             <h2>Support</h2>
             <p class="text-accent">
               I can take care the hosting for Wordpress projects so you don't
@@ -189,7 +191,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
 
     <section class="bg-accent-secondary text-accent p-8  grid grid-cols-12">
-      <div class="col-span-6 col-start-4">
+      <div class="lg:col-span-6 lg:col-start-4 col-span-12">
         <h2 class="text-2xl font-bold font-callout pb-8" id="process">
           Our Process
         </h2>
@@ -258,14 +260,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
 
     <section class="p-8  grid grid-cols-12">
-      <div class="col-span-6 col-start-4">
+      <div class="lg:col-span-6 lg:col-start-4 col-span-12">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
           id="pricing"
         >
           Pricing
         </h2>
-        <div class="grid grid-cols-2 grid-rows-2 gap-16">
+        <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-16">
           <div>
             <h3>Custom Mini-brand</h3>
             <p>
@@ -339,14 +341,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
     <section class="p-8  grid grid-cols-12">
-      <div class="col-span-6 col-start-4">
+      <div class="lg:col-span-6 lg:col-start-4 col-span-12">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
           id="contact"
         >
           Let's talk!
         </h2>
-        <div class="grid grid-cols-2 gap-16">
+        <div class="grid lg:grid-cols-2 gap-16">
           <form
             action="https://formspree.io"
             method="POST"
