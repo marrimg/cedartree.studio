@@ -92,7 +92,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           <div class="flex items-center justify-center">
             <a
               href="#contact"
-              class="border-2 border-white text-accent-secondary px-4 py-2 text-base font-medium hover:bg-accent-hover"
+              class="border-2 border-white text-accent-secondary px-4 py-2 text-base font-medium hover:border-light hover:text-light"
               >Get in touch</a
             >
           </div>
@@ -180,8 +180,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p class="text-accent">
               I can take care the hosting for Wordpress projects so you don't
               have to! I'll handle all your security updates, plugin updates,
-              and backups. Or, if your site is hosted elsewhere, you can book me
-              for a call to answer any of your questions!
+              and backups. Or, if you want to host your site elsewhere, you can
+              book me for a call to answer any of your questions!
             </p>
           </div>
         </div>
@@ -197,7 +197,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           <li>
             <h3>Discovery</h3>
             <p>
-              If you're interested in hiring me, contact me and we'll book a
+              If you have a project in mind, contact me and we'll book a
               complimentary discovery call! If we seem like a good fit to work
               together, you'll pay a 1/3 deposit and I'll get you on my
               calendar!
@@ -230,13 +230,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           <li>
             <h3>Development</h3>
             <p>
-              Once all the branding and assets are good to go, I'll start coding
-              your website. If you don't have a brand but choose not to go
-              forward with the custom brand package, I will utilize my favorite
-              default tasteful font selection and color pallette. We'll check in
-              at the halfway point and near the end of this period for questions
-              and feedback. Then, I'll wrap up any final tweaks, you'll make
-              your final payment, and we'll launch your new website!
+              Once all the branding and assets are good to go, I'll start
+              developing your website. If you're not supplying brand assets and
+              choose not to go forward with the custom brand package, I will use
+              my default tasteful font selection and color pallette. We'll check
+              in at the halfway point and near the end of this period for
+              questions and feedback. Then, I'll wrap up any final tweaks,
+              you'll make your final payment, and we'll launch your new website!
             </p>
           </li>
           <li>
@@ -387,7 +387,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
 
             <button
               type="submit"
-              class="border-2 border-text text-accent-secondary px-4 py-2 text-base font-medium hover:bg-accent-hover cursor-pointer"
+              class="border-2 border-text text-accent-secondary px-4 py-2 text-base font-medium hover:border-light hover:text-light cursor-pointer"
             >
               Send Message
             </button>
