@@ -8,6 +8,7 @@ import basicBrowser from "./assets/basic-browser";
 import advancedBrowser from "./assets/advanced-browser";
 import server from "./assets/server";
 import hourly from "./assets/hourly";
+import consultation from "./assets/consultation";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
@@ -77,13 +78,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </nav>
   </header>
-  <main class="mx-auto pb-22 w-full flex flex-col">
-    <section class="lg:h-[calc(100dvh-110px)] relative grid lg:grid-cols-2">
+  <main class="mx-auto w-full flex flex-col">
+    <section
+      class="lg:h-[calc(100dvh-110px)] relative grid lg:grid-cols-2 bg-accent-dark/65"
+    >
       <div
-        class="flex items-center content-center justify-center relative bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.jpg')] bg-[url('./assets/v-lese.jpg')] col-span-1"
+        class="flex items-center content-center  justify-center relative  col-span-1"
       >
-        <div class="absolute inset-0 bg-accent-dark/65"></div>
-        <div class="lg:hidden absolute inset-0  h-full w-full"></div>
+        <div
+          class="absolute inset-0 mix-blend-multiply bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.webp')] bg-[url('./assets/v-lese.jpg')]"
+        ></div>
         <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
           <h1
             class="font-heading text-7xl font-header text-center text-accent-secondary"
@@ -112,9 +116,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
     <section
-      class="bg-accent-secondary text-accent p-8 flex justify-start lg:justify-center"
+      class="bg-accent-secondary text-accent py-20 flex justify-start lg:justify-center"
     >
-      <div class="lg:max-w-[1000px] flex gap-8">
+      <div class="lg:max-w-[1000px] flex gap-16">
         <div class="lg:col-span-6 lg:col-start-1 flex-1">
           <div
             class="bg-cover  w-full h-full p-8 relative bg-no-repeat bg-[url('./assets/me2.jpg')]"
@@ -122,7 +126,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
         <div class="flex flex-col gap-4 flex-1">
           <div>
-            <h2 class="text-2xl font-bold font-callout " id="about">
+            <h2 class="text-2xl font-bold font-callout pb-2" id="about">
               Who I am
             </h2>
             <p>
@@ -133,7 +137,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </p>
           </div>
           <div>
-            <h2 class="text-2xl font-bold font-callout">What I do</h2>
+            <h2 class="text-2xl font-bold font-callout pb-2">What I do</h2>
             <p>
               I cover the full path from designing your website to ensuring its
               success. I can take care of branding, web development on
@@ -142,7 +146,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </p>
           </div>
           <div>
-            <h2 class="text-2xl font-bold font-callout">
+            <h2 class="text-2xl font-bold font-callout pb-2">
               Who I work with best
             </h2>
             <p>
@@ -154,36 +158,38 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section class="text-accent p-8 flex justify-start lg:justify-center">
-      <div class="lg:max-w-[1000px] ">
-        <h2
-          class="text-2xl font-bold font-callout text-accent pb-8"
-          id="services"
-        >
+    <section
+      class="text-accent-bg pt-16 pb-24 flex justify-start lg:justify-center bg-accent-dark/30 relative"
+    >
+      <div
+        class="absolute inset-0 mix-blend-multiply bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.webp')] opacity-35"
+      ></div>
+      <div class="lg:max-w-[1000px]">
+        <h2 class="text-2xl font-bold font-callout  pb-8" id="services">
           Services
         </h2>
         <div class="grid gap-8 lg:grid-cols-12">
           <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
           >
             <div class="flex gap-4 items-center pb-4">
-              <div class="">${bulb}</div>
+              <div class="stroke-accent-bg">${bulb}</div>
               <h2 class="text-lg">Branding</h2>
             </div>
-            <p class="text-accent">
+            <p>
               Are you starting a new business and don't have an established
               brand? Does your current brand feel outdated or unfocused? Add a
               mini-brand package to your web project and let me help!
             </p>
           </div>
           <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
           >
             <div class="flex gap-4 items-center pb-4">
-              <div>${webDesign}</div>
+              <div class="stroke-accent-bg">${webDesign}</div>
               <h2 class="text-lg">Web design</h2>
             </div>
-            <p class="text-accent">
+            <p>
               You don't want a site that looks like everyone else's. You're not
               looking for overused templates or AI slop. You want a website that
               tells your unique story and enables your customers to easily find
@@ -193,26 +199,26 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </p>
           </div>
           <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
           >
             <div class="flex gap-4 items-center pb-4">
-              <div>${webDev}</div>
+              <div class="stroke-accent-bg">${webDev}</div>
               <h2 class="text-lg">Web development</h2>
             </div>
-            <p class="text-accent">
+            <p>
               We will work together to figure out your needs, and we will choose
               the platform that is right for you. I currently work with
               Wordpress and Squarespace.
             </p>
           </div>
           <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
           >
             <div class="flex gap-4 items-center pb-4">
-              <div>${support}</div>
+              <div class="stroke-accent-bg">${support}</div>
               <h2>Support</h2>
             </div>
-            <p class="text-accent">
+            <p>
               I can take care the hosting for Wordpress projects so you don't
               have to! I'll handle all your security updates, plugin updates,
               and backups. Or, if you want to host your site elsewhere, you can
@@ -223,24 +229,25 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section
-      class="bg-accent-secondary text-accent p-8 flex justify-start lg:justify-center"
-    >
-      <div class="lg:max-w-[1000px]">
+    <section class="bg-accent-secondary text-accent grid grid-cols-2 ">
+      <div class="p-16">
         <h2 class="text-2xl font-bold font-callout pb-8" id="process">
           Our Process
         </h2>
-        <ol class="space-y-4 grid grid-rows-2 grid-cols-3 gap-8">
-          <li>
-            <h3 class="text-lg pb-2">Discovery</h3>
-            <p>
-              If you have a project in mind, contact me and we'll book a
-              complimentary discovery call! If we seem like a good fit, you'll
-              pay a 1/3 deposit and I'll get you on my calendar!
-            </p>
+
+        <ol class="grid  grid-cols-1 gap-8 ">
+          <li class=" flex flex-col gap-4">
+            <div>
+              <h3 class="text-lg pb-2">① Discovery</h3>
+              <p>
+                If you have a project in mind, contact me and we'll book a
+                complimentary discovery call! If we seem like a good fit, you'll
+                pay a 1/3 deposit and I'll get you on my calendar!
+              </p>
+            </div>
           </li>
-          <li>
-            <h3 class="text-lg pb-2">Strategy</h3>
+          <li class="">
+            <h3 class="text-lg pb-2">② Strategy</h3>
             <p>
               After booking, we'll get on a call and really dive into what you
               want to accomplish with your website. We'll choose a primary and
@@ -250,8 +257,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               works best for you and go over long-term support options.
             </p>
           </li>
-          <li>
-            <h3 class="text-lg pb-2">Preparation</h3>
+          <li class="">
+            <h3 class="text-lg pb-2">③ Preparation</h3>
             <p>
               After getting our plan in place, we'll kick off some time for
               preparation. This will give us time to work on anything that needs
@@ -263,8 +270,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               feedback (if needed) before development starts.
             </p>
           </li>
-          <li>
-            <h3 class="text-lg pb-2">Development</h3>
+          <li class="">
+            <h3 class="text-lg pb-2">④ Development</h3>
             <p>
               Once all the branding and assets are good to go, I'll start
               developing your website. If you're not supplying brand assets and
@@ -274,15 +281,15 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               questions, feedback, and revisions.
             </p>
           </li>
-          <li>
-            <h3 class="text-lg pb-2">Launch</h3>
+          <li class="">
+            <h3 class="text-lg pb-2">⑤ Launch</h3>
             <p>
               I wrap up any final tweaks, you'll make your final payment, and
               we'll launch your new website!
             </p>
           </li>
-          <li>
-            <h3 class="text-lg pb-2">Support</h3>
+          <li class="">
+            <h3 class="text-lg pb-2">⑥ Support</h3>
             <p>All clients get two weeks of free email support after launch.</p>
             <p>
               If you purchase Wordpress hosting through me, we'll start a new
@@ -297,9 +304,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           </li>
         </ol>
       </div>
+      <div
+        class="bg-cover bg-center relative bg-no-repeat min-h-35 bg-[url('./assets/brook-in-the-forest.jpg')] col-span-1 hidden lg:block"
+      >
+        <div class="absolute inset-0 bg-accent-hover/40"></div>
+      </div>
     </section>
 
-    <section class="text-accent p-8 flex justify-start lg:justify-center">
+    <section
+      class="text-accent py-16 flex justify-start lg:justify-center bg-accent-dark/25 relative"
+    >
       <div class="lg:max-w-[1000px]">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
@@ -309,7 +323,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </h2>
         <div class="grid lg:grid-cols-2 gap-8">
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center">
               ${basicBrowser}
@@ -322,7 +336,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p class="">$1,000</p>
             <a
               href="#contact"
-              class="bg-accent text-white px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
+              class="bg-accent text-on-dark-bg px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
               >Get started</a
             >
             <h4 class="font-bold">Features</h4>
@@ -355,7 +369,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
           >
             <div class="flex items-center gap-4">
               ${advancedBrowser}
@@ -368,7 +382,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p class="">$2,500</p>
             <a
               href="#contact"
-              class="bg-accent text-white px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
+              class="bg-accent text-on-dark-bg px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
               >Get started</a
             >
             <h4 class=" font-bold">Features</h4>
@@ -431,7 +445,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center ">
               ${server}
@@ -463,10 +477,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center">
-              ${bulb}
+              <div class="stroke-accent">${bulb}</div>
               <h3 class="text-lg">Custom Mini-brand</h3>
             </div>
             <p class="">Available as an add-on to your web design project!</p>
@@ -498,7 +512,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center">
               ${hourly}
@@ -536,7 +550,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
       </div>
     </section>
-    <section class="text-accent p-8 flex justify-start lg:justify-center">
+    <section
+      class="bg-accent-secondary text-accent py-24 flex justify-start lg:justify-center"
+    >
       <div class="lg:max-w-[1000px] flex-grow">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
@@ -593,7 +609,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
   </main>
   <footer
-    class="bg-accent text-accent-secondary h-42 px-12 py-12 flex justify-around items-center"
+    class="bg-accent-three text-accent-secondary h-42 px-12 py-12 flex justify-around items-center"
   >
     <div>@2026 Cedar Tree Studio</div>
     <div>hello@cedartree.studio</div>

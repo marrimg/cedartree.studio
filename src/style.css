@@ -3,6 +3,7 @@
   --text: #6b6375;
   --text-h: #36443e;
   --text-light: #bac5ba;
+  --color-on-dark-bg: #d2e0d2;
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
@@ -10,7 +11,8 @@
   --color-accent: #283425;
   --color-accent-dark: #494d09;
   --color-accent-hover: #6b6375;
-  --color-accent-bg: #634900;
+  --color-accent-bg: #a54708;
+  --color-accent-third: #67412a;
   --color-accent-secondary: #eceae0;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -73,11 +75,12 @@ a {
   --font-body: "JostVariable";
   --font-header: "CrimsonTextSemiBold";
   --font-callout: "CrimsonTextRegular";
-  --color-on-dark-bg: var(--text-light);
+  --color-on-dark-bg: var(--text-on-dark-bg);
   --color-accent-dark: var(--color-accent-dark);
   --color-accent-bg: var(--color-accent-bg);
   --color-light: var(--text-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
   --color-accent-secondary: var(--color-accent-secondary);
+  --color-accent-three: var(--color-accent-third);
 }
