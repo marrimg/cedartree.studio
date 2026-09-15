@@ -1,5 +1,13 @@
 import "./style.css";
 import typescriptLogo from "./assets/cts-logo";
+import bulb from "./assets/bulb";
+import webDesign from "./assets/web-design";
+import support from "./assets/support";
+import webDev from "./assets/web-dev";
+import basicBrowser from "./assets/basic-browser";
+import advancedBrowser from "./assets/advanced-browser";
+import server from "./assets/server";
+import hourly from "./assets/hourly";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
@@ -70,13 +78,12 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </nav>
   </header>
   <main class="mx-auto pb-22 w-full flex flex-col">
-    <section
-      class="lg:h-[calc(100dvh-110px)] relative grid grid-cols-1 lg:grid-cols-2"
-    >
+    <section class="lg:h-[calc(100dvh-110px)] relative grid lg:grid-cols-2">
       <div
-        class="flex items-center content-center justify-center relative bg-cover bg-center bg-no-repeat bg-[url('./assets/watercolor-paper.jpg')]"
+        class="flex items-center content-center justify-center relative bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.jpg')] bg-[url('./assets/v-lese.jpg')] col-span-1"
       >
         <div class="absolute inset-0 bg-accent-dark/65"></div>
+        <div class="lg:hidden absolute inset-0  h-full w-full"></div>
         <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
           <h1
             class="font-heading text-7xl font-header text-center text-accent-secondary"
@@ -99,7 +106,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
       </div>
       <div
-        class="bg-cover bg-center relative bg-no-repeat bg-[url('./assets/v-lese.jpg')]"
+        class="bg-cover bg-center relative bg-no-repeat bg-[url('./assets/v-lese.jpg')] col-span-1 hidden lg:block"
       >
         <div class="absolute inset-0 bg-accent-hover/40"></div>
       </div>
@@ -107,16 +114,22 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     <section
       class="bg-accent-secondary text-accent p-8 flex justify-start lg:justify-center"
     >
-      <div class="lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div></div>
-        <div class="flex flex-col gap-8">
+      <div class="lg:max-w-[1000px] flex gap-8">
+        <div class="lg:col-span-6 lg:col-start-1 flex-1">
+          <div
+            class="bg-cover  w-full h-full p-8 relative bg-no-repeat bg-[url('./assets/me2.jpg')]"
+          ></div>
+        </div>
+        <div class="flex flex-col gap-4 flex-1">
           <div>
-            <h2 class="text-2xl font-bold font-callout" id="about">Who I am</h2>
+            <h2 class="text-2xl font-bold font-callout " id="about">
+              Who I am
+            </h2>
             <p>
               I'm a web developer and designer with over 14 years of experience.
-              I believe that good design comes from good communication, and I
-              work closely with each client to tell their unique story, set
-              goals, and track their success!
+              I believe that good design comes from good communication, a strong
+              sense of empathy, creative problem-solving, and well-defined
+              goals.
             </p>
           </div>
           <div>
@@ -124,8 +137,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p>
               I cover the full path from designing your website to ensuring its
               success. I can take care of branding, web development on
-              Squarespace or WordPress, SEO, and hosting. Choose only the
-              services you need!
+              Squarespace or WordPress, SEO, and hosting. Choose the services
+              you need!
             </p>
           </div>
           <div>
@@ -134,15 +147,15 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </h2>
             <p>
               I specialize in working with small businesses and nonprofits who
-              are ready to get their story out there.
+              are looking to improve their web presence.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="p-8  grid grid-cols-12">
-      <div class="lg:col-span-6 lg:col-start-4">
+    <section class="text-accent p-8 flex justify-start lg:justify-center">
+      <div class="lg:max-w-[1000px] ">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
           id="services"
@@ -150,16 +163,26 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           Services
         </h2>
         <div class="grid gap-8 lg:grid-cols-12">
-          <div class="col-span-12 lg:col-span-6">
-            <h2>Branding</h2>
+          <div
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+          >
+            <div class="flex gap-4 items-center pb-4">
+              <div class="">${bulb}</div>
+              <h2 class="text-lg">Branding</h2>
+            </div>
             <p class="text-accent">
               Are you starting a new business and don't have an established
               brand? Does your current brand feel outdated or unfocused? Add a
               mini-brand package to your web project and let me help!
             </p>
           </div>
-          <div class="col-span-12 lg:col-span-6">
-            <h2>Web design</h2>
+          <div
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+          >
+            <div class="flex gap-4 items-center pb-4">
+              <div>${webDesign}</div>
+              <h2 class="text-lg">Web design</h2>
+            </div>
             <p class="text-accent">
               You don't want a site that looks like everyone else's. You're not
               looking for overused templates or AI slop. You want a website that
@@ -169,16 +192,26 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               your customers to that goal.
             </p>
           </div>
-          <div class="col-span-12 lg:col-span-6">
-            <h2>Web development</h2>
+          <div
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+          >
+            <div class="flex gap-4 items-center pb-4">
+              <div>${webDev}</div>
+              <h2 class="text-lg">Web development</h2>
+            </div>
             <p class="text-accent">
               We will work together to figure out your needs, and we will choose
               the platform that is right for you. I currently work with
               Wordpress and Squarespace.
             </p>
           </div>
-          <div class="col-span-12 lg:col-span-6">
-            <h2>Support</h2>
+          <div
+            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-hover"
+          >
+            <div class="flex gap-4 items-center pb-4">
+              <div>${support}</div>
+              <h2>Support</h2>
+            </div>
             <p class="text-accent">
               I can take care the hosting for Wordpress projects so you don't
               have to! I'll handle all your security updates, plugin updates,
@@ -190,25 +223,26 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section class="bg-accent-secondary text-accent p-8  grid grid-cols-12">
-      <div class="lg:col-span-6 lg:col-start-4 col-span-12">
+    <section
+      class="bg-accent-secondary text-accent p-8 flex justify-start lg:justify-center"
+    >
+      <div class="lg:max-w-[1000px]">
         <h2 class="text-2xl font-bold font-callout pb-8" id="process">
           Our Process
         </h2>
-        <ol class="list-decimal space-y-4">
+        <ol class="space-y-4 grid grid-rows-2 grid-cols-3 gap-8">
           <li>
-            <h3>Discovery</h3>
+            <h3 class="text-lg pb-2">Discovery</h3>
             <p>
               If you have a project in mind, contact me and we'll book a
-              complimentary discovery call! If we seem like a good fit to work
-              together, you'll pay a 1/3 deposit and I'll get you on my
-              calendar!
+              complimentary discovery call! If we seem like a good fit, you'll
+              pay a 1/3 deposit and I'll get you on my calendar!
             </p>
           </li>
           <li>
-            <h3>Strategy</h3>
+            <h3 class="text-lg pb-2">Strategy</h3>
             <p>
-              After booking we'll get on a call and really dive into what you
+              After booking, we'll get on a call and really dive into what you
               want to accomplish with your website. We'll choose a primary and
               secondary goal and talk through how to design the website to
               accomplish those goals. We'll map out your website's pages and
@@ -217,32 +251,38 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </p>
           </li>
           <li>
-            <h3>Preparation</h3>
+            <h3 class="text-lg pb-2">Preparation</h3>
             <p>
               After getting our plan in place, we'll kick off some time for
               preparation. This will give us time to work on anything that needs
               to be done before development starts. If you're supplying the
               copy, photos, and other brand assets for your website, this will
-              give you time to send me these things before development starts.
-              If you added on a mini-brand package, I will spend this time
-              working on your brand. Towards the end of the prep period, we'll
-              schedule some time for feedback before development starts.
+              give you time to send me these things. If you added on a
+              mini-brand package, I will spend this time working on your brand.
+              Towards the end of the prep period, we'll schedule some time for
+              feedback (if needed) before development starts.
             </p>
           </li>
           <li>
-            <h3>Development</h3>
+            <h3 class="text-lg pb-2">Development</h3>
             <p>
               Once all the branding and assets are good to go, I'll start
               developing your website. If you're not supplying brand assets and
-              choose not to go forward with the custom brand package, I will use
+              choose not to go forward with the mini brand package, I will use
               my default tasteful font selection and color pallette. We'll check
               in at the halfway point and near the end of this period for
-              questions and feedback. Then, I'll wrap up any final tweaks,
-              you'll make your final payment, and we'll launch your new website!
+              questions, feedback, and revisions.
             </p>
           </li>
           <li>
-            <h3>Support</h3>
+            <h3 class="text-lg pb-2">Launch</h3>
+            <p>
+              I wrap up any final tweaks, you'll make your final payment, and
+              we'll launch your new website!
+            </p>
+          </li>
+          <li>
+            <h3 class="text-lg pb-2">Support</h3>
             <p>All clients get two weeks of free email support after launch.</p>
             <p>
               If you purchase Wordpress hosting through me, we'll start a new
@@ -259,142 +299,296 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section class="p-8  grid grid-cols-12">
-      <div class="lg:col-span-6 lg:col-start-4 col-span-12">
+    <section class="text-accent p-8 flex justify-start lg:justify-center">
+      <div class="lg:max-w-[1000px]">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
           id="pricing"
         >
           Pricing
         </h2>
-        <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-16">
-          <div>
-            <h3>Custom Mini-brand</h3>
-            <p>
-              Available as an add-on to your web design project. This package
-              includes:
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div
+            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+          >
+            <div class="flex gap-4 items-center">
+              ${basicBrowser}
+              <h3 class="text-lg">Web development: Basic site</h3>
+            </div>
+            <p class="">
+              A blazing-fast, SEO optimized static website. Perfect for a small
+              business on a budget.
             </p>
-            <ul>
-              <li>
+            <p class="">$1,000</p>
+            <a
+              href="#contact"
+              class="bg-accent text-white px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
+              >Get started</a
+            >
+            <h4 class="font-bold">Features</h4>
+            <ul class="pl-6 relative  space-y-4">
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Up to 5 pages. For example: home, about us, products, contact.
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Responsive design
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Tested for accessibility
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Two rounds of revisions
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Simple contact form
+              </li>
+            </ul>
+          </div>
+          <div
+            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+          >
+            <div class="flex items-center gap-4">
+              ${advancedBrowser}
+              <h3 class="text-lg">Web development: Advanced site</h3>
+            </div>
+            <p class="">
+              Increase sales, appointments, or donations with my advanced site
+              package.
+            </p>
+            <p class="">$2,500</p>
+            <a
+              href="#contact"
+              class="bg-accent text-white px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
+              >Get started</a
+            >
+            <h4 class=" font-bold">Features</h4>
+            <ul class="pl-6 relative  space-y-4">
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Up to 7 pages
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Responsive design
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Tested for accessibility
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Two rounds of revisions
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Blog
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Advanced forms
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Sell products
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Take donations
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Calendar
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Map
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Schedule appointments
+              </li>
+            </ul>
+          </div>
+          <div
+            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+          >
+            <div class="flex gap-4 items-center ">
+              ${server}
+              <h3 class="text-lg">Site Hosting</h3>
+            </div>
+            <p class="">$150/month</p>
+            <h4 class=" font-bold">Features</h4>
+            <ul class=" relative  space-y-4 pl-6 ">
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Hosting
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Advanced SEO
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Free email support
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Two free support calls per month
+              </li>
+            </ul>
+          </div>
+          <div
+            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+          >
+            <div class="flex gap-4 items-center">
+              ${bulb}
+              <h3 class="text-lg">Custom Mini-brand</h3>
+            </div>
+            <p class="">Available as an add-on to your web design project!</p>
+            <p class="">$500</p>
+            <h4 class=" font-bold">Features</h4>
+            <ul class="relative  space-y-4 pl-6 ">
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
                 Wordmark logo with SVG files that can be used in print or
                 digital formats.
               </li>
-              <li>Custom typeface choices</li>
-              <li>Custom color palette</li>
-              <li>
-                Mini style guide that displays all of these elements in an easy
-                to reference format.
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Custom typeface choices
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Custom color palette
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Mini style guide that displays all of these elements in an
+                easy-to-reference format.
               </li>
             </ul>
-            <p>$500</p>
           </div>
-          <div>
-            <h3>Web development: Basic site</h3>
-            <ul>
-              <li>Up to 5 pages, including a gallery and a blog.</li>
-              <li>Responsive design</li>
-              <li>Tested for accessibility</li>
-              <li>Two rounds of revisions</li>
-              <li>Simple contact form</li>
-            </ul>
-            <p>$1,000</p>
-          </div>
-          <div>
-            <h3>Web development: Advanced site</h3>
-            <ul>
-              <li>Up to 7 pages, including a gallery and a blog.</li>
-              <li>Responsive design</li>
-              <li>Tested for accessibility</li>
-              <li>Two rounds of revisions</li>
-              <li>Advanced forms</li>
-              <li>E-commerce integration</li>
-              <li>Donation buttons</li>
-              <li>Calendar</li>
-              <li>Map</li>
-              <li>Scheduling</li>
-            </ul>
-            <p>$2,500</p>
-          </div>
-          <div>
-            <h3>Wordpress Hosting</h3>
-            <ul>
-              <li>Hosting</li>
-              <li>Advanced SEO</li>
-              <li>Free email support</li>
-              <li>Two free support calls per month</li>
-            </ul>
-            <p>$150/month</p>
-          </div>
-          <div>
-            <h3>Book me for a 60-minute call!</h3>
+          <div
+            class="px-4 pb-6 pt-4 border-1 border-accent-hover flex flex-col gap-4"
+          >
+            <div class="flex gap-4 items-center">
+              ${hourly}
+              <h3 class="text-lg">Hourly rate</h3>
+            </div>
             <p>
               If you've worked with me on a project and you don't have a hosting
-              plan, we can schedule a support call! We can talk about:
+              plan, we can schedule a call!
             </p>
-            <ul>
-              <li>Style updates</li>
-              <li>Technical questions</li>
+            <p class="">$100/hr</p>
+            <h4 class=" font-bold">We can talk about:</h4>
+            <ul class="pl-6 relative  space-y-4">
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Style updates
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Technical questions
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Small tweaks
+              </li>
+              <li
+                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
+              >
+                Upgrade to hosting plan
+              </li>
             </ul>
-            <p>$100</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="p-8  grid grid-cols-12">
-      <div class="lg:col-span-6 lg:col-start-4 col-span-12">
+    <section class="text-accent p-8 flex justify-start lg:justify-center">
+      <div class="lg:max-w-[1000px] flex-grow">
         <h2
           class="text-2xl font-bold font-callout text-accent pb-8"
           id="contact"
         >
           Let's talk!
         </h2>
-        <div class="grid lg:grid-cols-2 gap-16">
-          <form
-            action="https://formspree.io"
-            method="POST"
-            class="flex flex-col gap-4"
+        <form
+          action="https://formspree.io"
+          method="POST"
+          class="flex flex-col gap-4"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full name"
+              required
+              class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+            />
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="How can I help you?"
+              required
+              class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="border-2 border-text text-accent-secondary px-4 py-2 text-base font-medium hover:border-light hover:text-light cursor-pointer"
           >
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Full name"
-                required
-                class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
-              />
-            </div>
-
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
-                class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
-              />
-            </div>
-
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="How can I help you?"
-                required
-                class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              class="border-2 border-text text-accent-secondary px-4 py-2 text-base font-medium hover:border-light hover:text-light cursor-pointer"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   </main>

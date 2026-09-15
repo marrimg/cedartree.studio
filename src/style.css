@@ -10,7 +10,7 @@
   --color-accent: #283425;
   --color-accent-dark: #494d09;
   --color-accent-hover: #6b6375;
-  --color-accent-bg: #3a2f07;
+  --color-accent-bg: #634900;
   --color-accent-secondary: #eceae0;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -75,6 +75,7 @@ a {
   --font-callout: "CrimsonTextRegular";
   --color-on-dark-bg: var(--text-light);
   --color-accent-dark: var(--color-accent-dark);
+  --color-accent-bg: var(--color-accent-bg);
   --color-light: var(--text-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
