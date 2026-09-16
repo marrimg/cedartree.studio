@@ -19,7 +19,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       class="grow shrink-0 basis-auto flex flex-col justify-self-stretch bg-accent-secondary  text-accent-dark"
     >
       <div
-        class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8 uppercase"
+        class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8"
       >
         <div class="grow-0 shrink-0 basis-auto w-40 ">${typescriptLogo}</div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
@@ -58,9 +58,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         >
           ✕
         </div>
-        <div
-          class="flex flex-col items-center justify-center gap-16 pt-16 uppercase"
-        >
+        <div class="flex flex-col items-center justify-center gap-16 pt-16">
           <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
           <a href="#services" class="menu-item hover:text-accent-hover"
             >Services</a
@@ -79,34 +77,34 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </nav>
   </header>
   <main class="mx-auto w-full flex flex-col">
-    <section
-      class="lg:h-[calc(100dvh-110px)] relative grid lg:grid-cols-2 bg-accent-dark/65"
-    >
+    <section class="lg:h-[calc(100dvh-110px)] relative bg-accent-bg">
       <div
-        class="flex items-center content-center  justify-center relative  col-span-1"
+        class="bg-cover bg-center absolute inset-0 bg-no-repeat bg-[url('./assets/v-lese.jpg')] col-span-1 hidden lg:block opacity-10"
       >
         <div
-          class="absolute inset-0 mix-blend-multiply bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.webp')] bg-[url('./assets/v-lese.jpg')]"
+          class="absolute inset-0 bg-linear-to-b from-accent-hover/10 to-accent-hover/100 "
         ></div>
-        <div class="flex flex-col gap-16 z-10 max-w-[900px] p-20">
-          <h1
-            class="font-heading text-7xl font-header text-center text-accent-secondary"
+      </div>
+      <div
+        class="flex flex-col h-full items-center  gap-16 px-8 lg:px-80 content-center  justify-center relative  col-span-1"
+      >
+        <h1
+          class="font-heading text-8xl font-header text-center text-accent-secondary font-black tracking-tight"
+        >
+          <span class="text-accent-three">Human-centered</span> web design
+        </h1>
+        <p class="font-callout text-2xl text-center text-accent-secondary">
+          lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
+          voluptatum assumenda dolorem deleniti id excepturi laboris duis
+          commodo rerum ullamco amet distinctio mollit tempor in in deserunt
+          aute
+        </p>
+        <div class="flex items-center justify-center">
+          <a
+            href="#contact"
+            class="bg-accent-three px-8 py-4 text-accent-bg font-medium hover:accent-three/80 rounded-full hover:text-light"
+            >Get in touch</a
           >
-            Human-centered web design
-          </h1>
-          <p class="font-callout text-2xl text-center text-accent-secondary">
-            lorem ipsum dolor sit amet consectetur adipiscing elit facere do
-            nihil voluptatum assumenda dolorem deleniti id excepturi laboris
-            duis commodo rerum ullamco amet distinctio mollit tempor in in
-            deserunt aute
-          </p>
-          <div class="flex items-center justify-center">
-            <a
-              href="#contact"
-              class="border-2 border-white text-accent-secondary px-4 py-2 text-base font-medium hover:border-light hover:text-light"
-              >Get in touch</a
-            >
-          </div>
         </div>
       </div>
       <div
@@ -115,45 +113,34 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         <div class="absolute inset-0 bg-accent-hover/40"></div>
       </div>
     </section>
-    <section
-      class="bg-accent-secondary text-accent py-20 flex justify-start lg:justify-center"
-    >
-      <div class="lg:max-w-[1000px] flex gap-16">
-        <div class="lg:col-span-6 lg:col-start-1 flex-1">
-          <div
-            class="bg-cover  w-full h-full p-8 relative bg-no-repeat bg-[url('./assets/me2.jpg')]"
-          ></div>
+    <section class="bg-accent-secondary text-accent">
+      <div class="flex flex-col gap-4 flex-1 px-16 py-32">
+        <div>
+          <h2 class="text-2xl font-bold font-callout pb-2" id="about">
+            Who I am
+          </h2>
+          <p>
+            I'm a web developer and designer with over 14 years of experience. I
+            believe that good design comes from good communication, a strong
+            sense of empathy, creative problem-solving, and well-defined goals.
+          </p>
         </div>
-        <div class="flex flex-col gap-4 flex-1">
-          <div>
-            <h2 class="text-2xl font-bold font-callout pb-2" id="about">
-              Who I am
-            </h2>
-            <p>
-              I'm a web developer and designer with over 14 years of experience.
-              I believe that good design comes from good communication, a strong
-              sense of empathy, creative problem-solving, and well-defined
-              goals.
-            </p>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold font-callout pb-2">What I do</h2>
-            <p>
-              I cover the full path from designing your website to ensuring its
-              success. I can take care of branding, web development on
-              Squarespace or WordPress, SEO, and hosting. Choose the services
-              you need!
-            </p>
-          </div>
-          <div>
-            <h2 class="text-2xl font-bold font-callout pb-2">
-              Who I work with best
-            </h2>
-            <p>
-              I specialize in working with small businesses and nonprofits who
-              are looking to improve their web presence.
-            </p>
-          </div>
+        <div>
+          <h2 class="text-2xl font-bold font-callout pb-2">What I do</h2>
+          <p>
+            I cover the full path from designing your website to ensuring its
+            success. I can take care of branding, web development on Squarespace
+            or WordPress, SEO, and hosting. Choose the services you need!
+          </p>
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold font-callout pb-2">
+            Who I work with best
+          </h2>
+          <p>
+            I specialize in working with small businesses and nonprofits who are
+            looking to improve their web presence.
+          </p>
         </div>
       </div>
     </section>
@@ -230,7 +217,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
 
     <section class="bg-accent-secondary text-accent grid grid-cols-2 ">
-      <div class="p-16">
+      <div class="px-32 py-24">
         <h2 class="text-2xl font-bold font-callout pb-8" id="process">
           Our Process
         </h2>
