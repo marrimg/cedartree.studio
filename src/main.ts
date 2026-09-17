@@ -8,15 +8,17 @@ import basicBrowser from "./assets/basic-browser";
 import advancedBrowser from "./assets/advanced-browser";
 import server from "./assets/server";
 import hourly from "./assets/hourly";
-import consultation from "./assets/consultation";
+import check from "./assets/check";
+// import consultation from "./assets/consultation";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
-  class="relative"
+  class="relative bg-accent-bg text-light"
 >
-  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50">
+  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky">
+    <div class="bg-accent-bg absolute inset-0 opacity-97 -z-10"></div>
     <nav
-      class="grow shrink-0 basis-auto flex flex-col justify-self-stretch bg-accent-secondary  text-accent-dark"
+      class="grow shrink-0 basis-auto flex flex-col justify-self-stretch  text-light"
     >
       <div
         class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8"
@@ -50,7 +52,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
       <div
         id="mobile-menu"
-        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30 bg-accent-secondary py-8 w-full"
+        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30  py-8 w-full"
       >
         <div
           id="close-btn"
@@ -79,10 +81,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   <main class="mx-auto w-full flex flex-col">
     <section class="lg:h-[calc(100dvh-110px)] relative bg-accent-bg">
       <div
-        class="bg-cover bg-center absolute inset-0 bg-no-repeat bg-[url('./assets/v-lese.jpg')] col-span-1 hidden lg:block opacity-10"
+        class="bg-cover bg-center absolute inset-0 bg-no-repeat bg-[url('./assets/v-lese.jpg')] col-span-1 hidden lg:block opacity-50"
       >
         <div
-          class="absolute inset-0 bg-linear-to-b from-accent-hover/10 to-accent-hover/100 "
+          class="absolute inset-0 bg-linear-to-b from-accent-bg/70 via-30% to-accent-bg"
         ></div>
       </div>
       <div
@@ -94,10 +96,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           <span class="text-accent-three">Human-centered</span> web design
         </h1>
         <p class="font-callout text-2xl text-center text-accent-secondary">
-          lorem ipsum dolor sit amet consectetur adipiscing elit facere do nihil
-          voluptatum assumenda dolorem deleniti id excepturi laboris duis
-          commodo rerum ullamco amet distinctio mollit tempor in in deserunt
-          aute
+          In a sea of generic templates and AI slop, a
+          <span class="text-accent-three">human touch</span> in design is more
+          important than ever. Your website needs to stand out,
+          <span class="text-accent-three">tell your unique story</span>, and
+          empathetically guide viewers to your goals.
         </p>
         <div class="flex items-center justify-center">
           <a
@@ -113,119 +116,166 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         <div class="absolute inset-0 bg-accent-hover/40"></div>
       </div>
     </section>
-    <section class="bg-accent-secondary text-accent">
-      <div class="flex flex-col gap-4 flex-1 px-16 py-32">
-        <div>
-          <h2 class="text-2xl font-bold font-callout pb-2" id="about">
-            Who I am
+    <section class="flex justify-center">
+      <div class="flex flex-col gap-8 flex-1 px-16 py-16 max-w-[1200px]">
+        <div class="flex gap-2 items-center pb-2">
+          <div class="w-15 h-0 border-1 border-accent-three "></div>
+          <h2
+            class="uppercase font-bold font-callout text-accent-three text-xs "
+            id="about"
+          >
+            About me
           </h2>
-          <p>
-            I'm a web developer and designer with over 14 years of experience. I
-            believe that good design comes from good communication, a strong
-            sense of empathy, creative problem-solving, and well-defined goals.
-          </p>
         </div>
-        <div>
-          <h2 class="text-2xl font-bold font-callout pb-2">What I do</h2>
-          <p>
-            I cover the full path from designing your website to ensuring its
-            success. I can take care of branding, web development on Squarespace
-            or WordPress, SEO, and hosting. Choose the services you need!
-          </p>
-        </div>
-        <div>
-          <h2 class="text-2xl font-bold font-callout pb-2">
-            Who I work with best
-          </h2>
-          <p>
-            I specialize in working with small businesses and nonprofits who are
-            looking to improve their web presence.
-          </p>
-        </div>
+
+        <ul class="grid grid-cols-3">
+          <li class="p-8 flex flex-col gap-4 border-r border-light/15">
+            <h2 class="font-bold font-callout text-2xl" id="about">Who I am</h2>
+            <p>
+              I'm a web developer and designer with over 14 years of experience.
+              I believe that good design comes from good communication, a strong
+              sense of empathy, creative problem-solving, and well-defined
+              goals.
+            </p>
+          </li>
+          <li class="p-8 flex flex-col gap-4 border-r border-light/15">
+            <h2 class="font-bold font-callout text-2xl">What I do</h2>
+            <p>
+              I cover the full path from designing your website to ensuring its
+              success. I can take care of branding, web development on
+              Squarespace or WordPress, SEO, and hosting. Choose the services
+              you need!
+            </p>
+          </li>
+          <li class=" p-8 flex flex-col gap-4">
+            <h2 class="font-bold font-callout text-2xl">
+              Who I work with best
+            </h2>
+            <p>
+              I specialize in working with
+              <span class="text-accent-three">small businesses</span> and
+              <span class="text-accent-three">nonprofits</span> who are looking
+              to improve their web presence.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section
-      class="text-accent-bg pt-16 pb-24 flex justify-start lg:justify-center bg-accent-dark/30 relative"
-    >
+    <section class="pt-16 pb-24 flex justify-start lg:justify-center  relative">
       <div
         class="absolute inset-0 mix-blend-multiply bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.webp')] opacity-35"
       ></div>
       <div class="lg:max-w-[1000px]">
-        <h2 class="text-2xl font-bold font-callout  pb-8" id="services">
-          Services
-        </h2>
-        <div class="grid gap-8 lg:grid-cols-12">
-          <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
+        <div class="flex gap-2 items-center pb-2">
+          <div class="w-15 h-0 border-1 border-accent-three "></div>
+          <h2
+            class="uppercase font-bold font-callout text-accent-three text-xs "
+            id="about"
           >
-            <div class="flex gap-4 items-center pb-4">
-              <div class="stroke-accent-bg">${bulb}</div>
-              <h2 class="text-lg">Branding</h2>
+            Services
+          </h2>
+        </div>
+        <div class="grid grid-cols-12">
+          <div class="col-span-8">
+            <div class=" px-4 pb-6 pt-4 ">
+              <div class="flex gap-4 items-center pb-4">
+                <div class="stroke-accent-three">${bulb}</div>
+                <h2 class="font-bold font-callout text-2xl">Branding</h2>
+              </div>
+              <div class="grid gap-4">
+                <p>
+                  Are you starting a new business and don't have an established
+                  brand? Does your current brand feel outdated or unfocused? Add
+                  a mini-brand package to your web project and let me help!
+                </p>
+                <a href="#contact" class="text-accent-three">Get started →</a>
+              </div>
             </div>
-            <p>
-              Are you starting a new business and don't have an established
-              brand? Does your current brand feel outdated or unfocused? Add a
-              mini-brand package to your web project and let me help!
-            </p>
-          </div>
-          <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
-          >
-            <div class="flex gap-4 items-center pb-4">
-              <div class="stroke-accent-bg">${webDesign}</div>
-              <h2 class="text-lg">Web design</h2>
+            <div
+              class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15"
+            >
+              <div class="flex gap-4 items-center pb-4">
+                <div class="stroke-accent-three">${webDesign}</div>
+                <h2 class="font-bold font-callout text-2xl">Web design</h2>
+              </div>
+              <div class="grid gap-4">
+                <p>
+                  You don't want a site that looks like everyone else's. You're
+                  not looking for overused templates or AI slop. You want a
+                  website that tells your unique story and enables your
+                  customers to easily find what they want. I can do that! We'll
+                  walk through what you want to accomplish with your site and
+                  create a design that helps guide your customers to that goal.
+                </p>
+                <a href="#contact" class="text-accent-three"
+                  >Get started with your website →</a
+                >
+              </div>
             </div>
-            <p>
-              You don't want a site that looks like everyone else's. You're not
-              looking for overused templates or AI slop. You want a website that
-              tells your unique story and enables your customers to easily find
-              what they want. I can do that! We'll walk through what you want to
-              accomplish with your site and create a design that helps guide
-              your customers to that goal.
-            </p>
-          </div>
-          <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
-          >
-            <div class="flex gap-4 items-center pb-4">
-              <div class="stroke-accent-bg">${webDev}</div>
-              <h2 class="text-lg">Web development</h2>
+            <div
+              class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15"
+            >
+              <div class="flex gap-4 items-center pb-4">
+                <div class="stroke-accent-three">${webDev}</div>
+                <h2 class="font-bold font-callout text-2xl">Web development</h2>
+              </div>
+              <div class="grid gap-4">
+                <p>
+                  We will work together to figure out your needs, and we will
+                  choose the platform that is right for you. I currently work
+                  with Wordpress and Squarespace.
+                </p>
+                <a href="#contact" class="text-accent-three"
+                  >Get started with your website →</a
+                >
+              </div>
             </div>
-            <p>
-              We will work together to figure out your needs, and we will choose
-              the platform that is right for you. I currently work with
-              Wordpress and Squarespace.
-            </p>
-          </div>
-          <div
-            class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-1 border-accent-bg"
-          >
-            <div class="flex gap-4 items-center pb-4">
-              <div class="stroke-accent-bg">${support}</div>
-              <h2>Support</h2>
+            <div
+              class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-y border-light/15"
+            >
+              <div class="flex gap-4 items-center pb-4">
+                <div class="stroke-accent-three">${support}</div>
+                <h2 class="font-bold font-callout text-2xl">Support</h2>
+              </div>
+              <div class="grid gap-4">
+                <p>
+                  I can take care the hosting for Wordpress projects so you
+                  don't have to! I'll handle all your security updates, plugin
+                  updates, and backups. Or, if you want to host your site
+                  elsewhere, you can book me for a call to answer any of your
+                  questions!
+                </p>
+                <a href="#contact" class="text-accent-three"
+                  >Ask me about hosting →</a
+                >
+              </div>
             </div>
-            <p>
-              I can take care the hosting for Wordpress projects so you don't
-              have to! I'll handle all your security updates, plugin updates,
-              and backups. Or, if you want to host your site elsewhere, you can
-              book me for a call to answer any of your questions!
-            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-accent-secondary text-accent grid grid-cols-2 ">
-      <div class="px-32 py-24">
+    <section class="flex justify-center relative">
+      <div
+        class="bg-cover bg-center absolute inset-0 opacity-15 bg-no-repeat min-h-35 bg-[url('./assets/brook-in-the-forest.jpg')] col-span-1 hidden lg:block"
+      >
+        <div
+          class="absolute inset-0 bg-linear-to-b from-accent-bg/70 via-30% to-accent-bg"
+        ></div>
+      </div>
+      <div class="px-32 py-24 max-w-[1200px]">
         <h2 class="text-2xl font-bold font-callout pb-8" id="process">
           Our Process
         </h2>
 
-        <ol class="grid  grid-cols-1 gap-8 ">
-          <li class=" flex flex-col gap-4">
-            <div>
-              <h3 class="text-lg pb-2">① Discovery</h3>
+        <ol class="grid  grid-cols-1">
+          <li
+            class="flex gap-8 align-center items-center border-t border-light/15"
+          >
+            <span class="text-accent-three">01</span>
+            <div class="flex flex-col gap-4 p-8">
+              <h3 class="font-bold font-callout text-2xl">Discovery</h3>
               <p>
                 If you have a project in mind, contact me and we'll book a
                 complimentary discovery call! If we seem like a good fit, you'll
@@ -233,87 +283,105 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </p>
             </div>
           </li>
-          <li class="">
-            <h3 class="text-lg pb-2">② Strategy</h3>
-            <p>
-              After booking, we'll get on a call and really dive into what you
-              want to accomplish with your website. We'll choose a primary and
-              secondary goal and talk through how to design the website to
-              accomplish those goals. We'll map out your website's pages and
-              discuss branding, content and images. We'll discuss which platfrom
-              works best for you and go over long-term support options.
-            </p>
+          <li
+            class="flex gap-8 align-center items-center border-t border-light/15"
+          >
+            <span class="text-accent-three">02</span>
+            <div class="flex flex-col gap-4  p-8">
+              <h3 class="font-bold font-callout text-2xl">Strategy</h3>
+              <p>
+                After booking, we'll get on a call and really dive into what you
+                want to accomplish with your website. We'll choose a primary and
+                secondary goal and talk through how to design the website to
+                accomplish those goals. We'll map out your website's pages and
+                discuss branding, content and images. We'll discuss which
+                platfrom works best for you and go over long-term support
+                options.
+              </p>
+            </div>
           </li>
-          <li class="">
-            <h3 class="text-lg pb-2">③ Preparation</h3>
-            <p>
-              After getting our plan in place, we'll kick off some time for
-              preparation. This will give us time to work on anything that needs
-              to be done before development starts. If you're supplying the
-              copy, photos, and other brand assets for your website, this will
-              give you time to send me these things. If you added on a
-              mini-brand package, I will spend this time working on your brand.
-              Towards the end of the prep period, we'll schedule some time for
-              feedback (if needed) before development starts.
-            </p>
+          <li
+            class="flex gap-8 align-center items-center border-t border-light/15"
+          >
+            <span class="text-accent-three">03</span>
+            <div class="flex flex-col gap-4  p-8">
+              <h3 class="font-bold font-callout text-2xl">Preparation</h3>
+              <p>
+                After getting our plan in place, we'll kick off some time for
+                preparation. This will give us time to work on anything that
+                needs to be done before development starts. If you're supplying
+                the copy, photos, and other brand assets for your website, this
+                will give you time to send me these things. If you added on a
+                mini-brand package, I will spend this time working on your
+                brand. Towards the end of the prep period, we'll schedule some
+                time for feedback (if needed) before development starts.
+              </p>
+            </div>
           </li>
-          <li class="">
-            <h3 class="text-lg pb-2">④ Development</h3>
-            <p>
-              Once all the branding and assets are good to go, I'll start
-              developing your website. If you're not supplying brand assets and
-              choose not to go forward with the mini brand package, I will use
-              my default tasteful font selection and color pallette. We'll check
-              in at the halfway point and near the end of this period for
-              questions, feedback, and revisions.
-            </p>
+          <li
+            class="flex gap-8 align-center items-center border-t border-light/15"
+          >
+            <span class="text-accent-three">04</span>
+            <div class="flex flex-col gap-4  p-8">
+              <h3 class="font-bold font-callout text-2xl">Development</h3>
+              <p>
+                Once all the branding and assets are good to go, I'll start
+                developing your website. If you're not supplying brand assets
+                and choose not to go forward with the mini brand package, I will
+                use my default tasteful font selection and color pallette. We'll
+                check in at the halfway point and near the end of this period
+                for questions, feedback, and revisions.
+              </p>
+            </div>
           </li>
-          <li class="">
-            <h3 class="text-lg pb-2">⑤ Launch</h3>
-            <p>
-              I wrap up any final tweaks, you'll make your final payment, and
-              we'll launch your new website!
-            </p>
+          <li
+            class="flex gap-8 align-center items-center border-t border-light/15"
+          >
+            <span class="text-accent-three">05</span>
+            <div class="flex flex-col gap-4  p-8">
+              <h3 class="font-bold font-callout text-2xl">Launch</h3>
+              <p>
+                I wrap up any final tweaks, you'll make your final payment, and
+                we'll launch your new website!
+              </p>
+            </div>
           </li>
-          <li class="">
-            <h3 class="text-lg pb-2">⑥ Support</h3>
-            <p>All clients get two weeks of free email support after launch.</p>
-            <p>
-              If you purchase Wordpress hosting through me, we'll start a new
-              contract for a monthly subscription. This service includes
-              hosting, software updates, email support, and two free support
-              calls a month.
-            </p>
-            <p>
-              If you self-host your Wordpress site or host on Squarespace, you
-              can always book me for an hour-long support call!
-            </p>
+          <li
+            class="flex gap-8 align-center items-center border-t border-light/15"
+          >
+            <span class="text-accent-three">06</span>
+            <div class="flex flex-col gap-4  p-8">
+              <h3 class="font-bold font-callout text-2xl">Support</h3>
+              <p>
+                All clients get two weeks of free email support after launch.
+              </p>
+              <p>
+                If you purchase Wordpress hosting through me, we'll start a new
+                contract for a monthly subscription. This service includes
+                hosting, software updates, email support, and two free support
+                calls a month.
+              </p>
+              <p>
+                If you self-host your Wordpress site or host on Squarespace, you
+                can always book me for an hour-long support call!
+              </p>
+            </div>
           </li>
         </ol>
       </div>
-      <div
-        class="bg-cover bg-center relative bg-no-repeat min-h-35 bg-[url('./assets/brook-in-the-forest.jpg')] col-span-1 hidden lg:block"
-      >
-        <div class="absolute inset-0 bg-accent-hover/40"></div>
-      </div>
     </section>
 
-    <section
-      class="text-accent py-16 flex justify-start lg:justify-center bg-accent-dark/25 relative"
-    >
+    <section class="py-16 flex justify-start lg:justify-center relative">
       <div class="lg:max-w-[1000px]">
-        <h2
-          class="text-2xl font-bold font-callout text-accent pb-8"
-          id="pricing"
-        >
+        <h2 class="text-2xl font-bold font-callout pb-8" id="pricing">
           Pricing
         </h2>
         <div class="grid lg:grid-cols-2 gap-8">
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center">
-              ${basicBrowser}
+              <span class="stroke-accent-three">${basicBrowser}</span>
               <h3 class="text-lg">Web development: Basic site</h3>
             </div>
             <p class="">
@@ -323,43 +391,34 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p class="">$1,000</p>
             <a
               href="#contact"
-              class="bg-accent text-on-dark-bg px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
               >Get started</a
             >
             <h4 class="font-bold">Features</h4>
             <ul class="pl-6 relative  space-y-4">
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>
                 Up to 5 pages. For example: home, about us, products, contact.
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Responsive design
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Responsive design
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Tested for accessibility
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Tested for accessibility
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Two rounds of revisions
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Two rounds of revisions
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Simple contact form
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Simple contact form
               </li>
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
           >
             <div class="flex items-center gap-4">
-              ${advancedBrowser}
+              <span class="stroke-accent-three">${advancedBrowser}</span>
               <h3 class="text-lg">Web development: Advanced site</h3>
             </div>
             <p class="">
@@ -369,140 +428,101 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p class="">$2,500</p>
             <a
               href="#contact"
-              class="bg-accent text-on-dark-bg px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
               >Get started</a
             >
             <h4 class=" font-bold">Features</h4>
             <ul class="pl-6 relative  space-y-4">
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Up to 7 pages
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Up to 7 pages
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Responsive design
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Responsive design
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Tested for accessibility
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Tested for accessibility
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Two rounds of revisions
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Two rounds of revisions
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Blog
+              <li class="flex gap-4 items-center"><span>${check}</span>Blog</li>
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Advanced forms
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Advanced forms
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Sell products
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Sell products
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Take donations
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Take donations
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Calendar
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Calendar
-              </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Map
-              </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Schedule appointments
+              <li class="flex gap-4 items-center"><span>${check}</span>Map</li>
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Schedule appointments
               </li>
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center ">
-              ${server}
+              <span class="stroke-accent-three">${server}</span>
               <h3 class="text-lg">Site Hosting</h3>
             </div>
             <p class="">$150/month</p>
             <h4 class=" font-bold">Features</h4>
             <ul class=" relative  space-y-4 pl-6 ">
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Hosting
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Hosting
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Advanced SEO
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Advanced SEO
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Free email support
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Free email support
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>
                 Two free support calls per month
               </li>
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center">
-              <div class="stroke-accent">${bulb}</div>
+              <div class="stroke-accent-three">${bulb}</div>
               <h3 class="text-lg">Custom Mini-brand</h3>
             </div>
             <p class="">Available as an add-on to your web design project!</p>
             <p class="">$500</p>
             <h4 class=" font-bold">Features</h4>
             <ul class="relative  space-y-4 pl-6 ">
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>
                 Wordmark logo with SVG files that can be used in print or
                 digital formats.
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Custom typeface choices
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Custom typeface choices
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Custom color palette
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Custom color palette
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>
                 Mini style guide that displays all of these elements in an
                 easy-to-reference format.
               </li>
             </ul>
           </div>
           <div
-            class="px-4 pb-6 pt-4 border-1 border-accent flex flex-col gap-4"
+            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
           >
             <div class="flex gap-4 items-center">
-              ${hourly}
+              <span class="stroke-accent-three">${hourly}</span>
               <h3 class="text-lg">Hourly rate</h3>
             </div>
             <p>
@@ -512,37 +532,27 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             <p class="">$100/hr</p>
             <h4 class=" font-bold">We can talk about:</h4>
             <ul class="pl-6 relative  space-y-4">
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Style updates
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Style updates
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Technical questions
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Technical questions
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Small tweaks
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Small tweaks
               </li>
-              <li
-                class="relative before:content-[url(./assets/check.svg)] before:absolute before:-left-6 before:top-0.25"
-              >
-                Upgrade to hosting plan
+              <li class="flex gap-4 items-center">
+                <span>${check}</span>Upgrade to hosting plan
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section
-      class="bg-accent-secondary text-accent py-24 flex justify-start lg:justify-center"
-    >
+    <section class=" text-accent py-24 flex justify-start lg:justify-center">
       <div class="lg:max-w-[1000px] flex-grow">
         <h2
-          class="text-2xl font-bold font-callout text-accent pb-8"
+          class="text-2xl font-bold font-callout text-light pb-8"
           id="contact"
         >
           Let's talk!
@@ -559,7 +569,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               name="name"
               placeholder="Full name"
               required
-              class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+              class="border border-accent-three rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
             />
           </div>
 
@@ -570,7 +580,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               name="email"
               placeholder="Email"
               required
-              class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+              class="border border-accent-three rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
             />
           </div>
 
@@ -581,13 +591,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               rows="5"
               placeholder="How can I help you?"
               required
-              class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+              class="border border-accent-three rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            class="border-2 border-text text-accent-secondary px-4 py-2 text-base font-medium hover:border-light hover:text-light cursor-pointer"
+            class="bg-accent-three text-accent px-4 py-2 text-base font-medium  hover:text-light cursor-pointer"
           >
             Send Message
           </button>
@@ -596,7 +606,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
   </main>
   <footer
-    class="bg-accent-three text-accent-secondary h-42 px-12 py-12 flex justify-around items-center"
+    class="bg-accent-bg text-accent-secondary h-42 px-12 py-12 flex justify-around items-center"
   >
     <div>@2026 Cedar Tree Studio</div>
     <div>hello@cedartree.studio</div>
