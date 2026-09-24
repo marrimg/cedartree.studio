@@ -8,11 +8,11 @@
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --color-text: #fff;
-  --color-accent: #283425;
+  --color-accent: #364732;
   --color-accent-dark: #494d09;
   --color-accent-hover: #6b6375;
-  --color-accent-bg: #262f2e;
-  --color-accent-third: #049f57;
+  --color-accent-bg: #22342c;
+  --color-accent-third: #81e8b0;
   --color-accent-secondary: #eceae0;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -59,6 +59,14 @@ a {
 }
 
 @font-face {
+  font-family: "Playfair";
+  src: url("./assets/Playfair-VariableFont_opsz,wdth,wght.woff2")
+    format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Manrope";
   src: url("./assets/Manrope-Variable.woff2") format("woff2");
   font-weight: 100 900;
@@ -73,15 +81,24 @@ a {
 }
 
 @font-face {
-  font-family: "CrimsonTextRegular";
-  src: url("./assets/CrimsonText-Regular.woff2") format("woff2");
+  font-family: "Trykker";
+  src: url("./assets/Trykker-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yesteryear";
+  src: url("./assets/Yesteryear-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @theme {
   --font-body: "Inter";
-  --font-header: "Manrope";
+  --font-header: "Trykker";
+  --font-header2: "Yesteryear";
+  --font-subheader: "Trykker";
   --font-callout: "Inter";
   --color-on-dark-bg: var(--text-on-dark-bg);
   --color-accent-dark: var(--color-accent-dark);

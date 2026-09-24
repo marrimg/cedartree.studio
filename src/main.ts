@@ -81,46 +81,45 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
   <main class="mx-auto w-full flex flex-col">
     <section class="lg:h-[calc(100dvh-110px)] relative bg-accent-bg">
       <div
-        class="bg-cover bg-top absolute inset-0 bg-no-repeat bg-[url('./assets/impression.jpg')] col-span-1 hidden lg:block opacity-45 mix-blend-screen"
-      ></div>
-      <div
         class="absolute inset-0 bg-linear-to-b from-accent-bg/80 via-30% to-accent-bg"
       ></div>
       <div
-        class="flex flex-col h-full items-center  gap-16 px-8 lg:px-80 content-center  justify-center relative  col-span-1"
+        class="flex flex-col h-full items-center gap-8 pt-8 lg:px-80 content-center  justify-center relative  col-span-1"
       >
-        <h1
-          class="text-8xl font-callout text-center text-accent-secondary font-black"
-        >
-          <span class="text-accent-three">Human-centered</span> web design
-        </h1>
-        <p class="font-callout text-2xl text-center text-accent-secondary">
-          In a sea of generic templates and AI slop, a
-          <span class="text-accent-three">human touch</span> is more important
-          than ever. Your website needs to stand out,
-          <span class="text-accent-three">tell your unique story</span>, and
-          empathetically guide viewers to your goals.
-        </p>
-        <div class="flex items-center justify-center">
-          <a
-            href="#contact"
-            class="bg-accent-three px-8 py-4 text-accent-bg font-medium hover:accent-three/80 rounded-full hover:text-light"
-            >Get in touch</a
+        <img src="src/assets/tree.webp" class="w-44" />
+        <div class="flex flex-col h-full items-center  gap-12">
+          <h1
+            class="text-8xl font-header text-center text-accent-secondary font-black"
           >
+            Web design<br />
+            <span class="font-header2 ">for</span>
+            <span class=" -ml-2">humans</span>
+          </h1>
+          <p
+            class="font-subheader text-xl text-center leading-10 text-accent-secondary "
+          >
+            In a sea of generic templates, a
+            <span class="text-accent-three">human touch</span> is more important
+            than ever. Your website needs to stand out,
+            <span class="text-accent-three">tell your unique story</span>, and
+            empathetically guide viewers to your goals.
+          </p>
+          <div class="flex items-center justify-center">
+            <a
+              href="#contact"
+              class="bg-accent-three px-8 py-4 text-accent-bg font-medium hover:accent-three/80 rounded-full hover:text-light"
+              >Get in touch</a
+            >
+          </div>
         </div>
-      </div>
-      <div
-        class="bg-cover bg-center relative bg-no-repeat bg-[url('./assets/v-lese.jpg')] col-span-1 hidden lg:block"
-      >
-        <div class="absolute inset-0 bg-accent-hover/40"></div>
       </div>
     </section>
     <section class="flex justify-center">
-      <div class="flex flex-col gap-8 flex-1 px-16 py-16 max-w-[1200px]">
+      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
           <h2
-            class="uppercase font-bold font-callout text-accent-three text-xs "
+            class="uppercase font-black font-callout text-accent-three text-xs "
             id="about"
           >
             About me
@@ -129,7 +128,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
 
         <ul class="grid grid-cols-3">
           <li class="p-8 flex flex-col gap-4 border-r border-light/15">
-            <h2 class="font-bold font-callout text-2xl" id="about">Who I am</h2>
+            <h2 class="font-black font-callout text-2xl" id="about">
+              Who I am
+            </h2>
             <p>
               I'm a web developer and designer with over 14 years of experience.
               I believe that good design comes from good communication, a strong
@@ -138,7 +139,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </p>
           </li>
           <li class="p-8 flex flex-col gap-4 border-r border-light/15">
-            <h2 class="font-bold font-callout text-2xl">What I do</h2>
+            <h2 class="font-black font-callout text-2xl">What I do</h2>
             <p>
               I cover the full path from designing your website to ensuring its
               success. I can take care of branding, web development on
@@ -147,7 +148,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </p>
           </li>
           <li class=" p-8 flex flex-col gap-4">
-            <h2 class="font-bold font-callout text-2xl">
+            <h2 class="font-black font-callout text-2xl">
               Who I work with best
             </h2>
             <p>
@@ -161,26 +162,23 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section class="pt-16 pb-24 flex justify-start lg:justify-center  relative">
-      <div
-        class="absolute inset-0 mix-blend-multiply bg-cover bg-center bg-no-repeat lg:bg-[url('./assets/watercolor-paper.webp')] opacity-35"
-      ></div>
-      <div class="lg:max-w-[1000px]">
+    <section class="flex justify-center">
+      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
           <h2
-            class="uppercase font-bold font-callout text-accent-three text-xs "
+            class="uppercase font-black font-callout text-accent-three text-xs "
             id="about"
           >
             Services
           </h2>
         </div>
-        <div class="grid grid-cols-12">
-          <div class="col-span-8">
+        <div class="grid grid-cols-12 gap-8">
+          <div class="col-span-6">
             <div class=" px-4 pb-6 pt-4 ">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${bulb}</div>
-                <h2 class="font-bold font-callout text-2xl">Branding</h2>
+                <h2 class="font-black font-callout text-2xl">Branding</h2>
               </div>
               <div class="grid gap-4">
                 <p>
@@ -196,7 +194,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             >
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${webDesign}</div>
-                <h2 class="font-bold font-callout text-2xl">Web design</h2>
+                <h2 class="font-black font-callout text-2xl">Web design</h2>
               </div>
               <div class="grid gap-4">
                 <p>
@@ -217,7 +215,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             >
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${webDev}</div>
-                <h2 class="font-bold font-callout text-2xl">Web development</h2>
+                <h2 class="font-black font-callout text-2xl">
+                  Web development
+                </h2>
               </div>
               <div class="grid gap-4">
                 <p>
@@ -235,7 +235,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             >
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${support}</div>
-                <h2 class="font-bold font-callout text-2xl">Support</h2>
+                <h2 class="font-black font-callout text-2xl">Support</h2>
               </div>
               <div class="grid gap-4">
                 <p>
@@ -251,23 +251,22 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </div>
             </div>
           </div>
+          <div class="col-span-6">
+            <img
+              src="https://assets.marrigamard.com/antimatter-style-guide.webp"
+              class="w-full"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="flex justify-center relative">
-      <div
-        class="bg-cover bg-center absolute inset-0 opacity-15 bg-no-repeat min-h-35 bg-[url('./assets/brook-in-the-forest.jpg')] col-span-1 hidden lg:block"
-      >
-        <div
-          class="absolute inset-0 bg-linear-to-b from-accent-bg/70 via-30% to-accent-bg"
-        ></div>
-      </div>
-      <div class="px-32 py-24 max-w-[1200px]">
+    <section class="flex justify-center"">
+      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
           <h2
-            class="uppercase font-bold font-callout text-accent-three text-xs "
+            class="uppercase font-black font-callout text-accent-three text-xs "
             id="about"
           >
             Process
@@ -278,7 +277,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           <li class="flex gap-8 align-center items-center border-light/15">
             <span class="text-accent-three">01</span>
             <div class="flex flex-col gap-4 p-8">
-              <h3 class="font-bold font-callout text-2xl">Discovery</h3>
+              <h3 class="font-black font-callout text-2xl">Discovery</h3>
               <p>
                 If you have a project in mind,
                 <a href="#contact" class="text-accent-three">contact me</a> and
@@ -293,7 +292,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <span class="text-accent-three">02</span>
             <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-bold font-callout text-2xl">Strategy</h3>
+              <h3 class="font-black font-callout text-2xl">Strategy</h3>
               <p>
                 After booking, we'll get on a call and really dive into what you
                 want to accomplish with your website. We'll choose a primary and
@@ -310,7 +309,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <span class="text-accent-three">03</span>
             <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-bold font-callout text-2xl">Preparation</h3>
+              <h3 class="font-black font-callout text-2xl">Preparation</h3>
               <p>
                 After getting our plan in place, we'll kick off some time for
                 preparation. This will give us time to work on anything that
@@ -328,7 +327,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <span class="text-accent-three">04</span>
             <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-bold font-callout text-2xl">Development</h3>
+              <h3 class="font-black font-callout text-2xl">Development</h3>
               <p>
                 Once all the branding and assets are good to go, I'll start
                 developing your website. If you're not supplying brand assets
@@ -344,7 +343,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <span class="text-accent-three">05</span>
             <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-bold font-callout text-2xl">Launch</h3>
+              <h3 class="font-black font-callout text-2xl">Launch</h3>
               <p>
                 I wrap up any final tweaks, you'll make your final payment, and
                 we'll launch your new website!
@@ -356,7 +355,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <span class="text-accent-three">06</span>
             <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-bold font-callout text-2xl">Support</h3>
+              <h3 class="font-black font-callout text-2xl">Support</h3>
               <p>
                 All clients get two weeks of free email support after launch.
               </p>
@@ -376,12 +375,12 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       </div>
     </section>
 
-    <section class="py-16 flex justify-start lg:justify-center relative">
-      <div class="lg:max-w-[1000px]">
+    <section class="flex justify-center">
+      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-16">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
           <h2
-            class="uppercase font-bold font-callout text-accent-three text-xs "
+            class="uppercase font-black font-callout text-accent-three text-xs "
             id="pricing"
           >
             Pricing
@@ -405,7 +404,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
               >Get started</a
             >
-            <h4 class="font-bold">Features</h4>
+            <h4 class="font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
                 <span>${check}</span>
@@ -442,7 +441,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
               >Get started</a
             >
-            <h4 class=" font-bold">Features</h4>
+            <h4 class=" font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
                 <span>${check}</span>Up to 7 pages
@@ -483,7 +482,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               <h3 class="text-lg">Site Hosting</h3>
             </div>
             <p class="">$150/month</p>
-            <h4 class=" font-bold">Features</h4>
+            <h4 class=" font-black">Features</h4>
             <ul class=" relative  space-y-4 pl-6 ">
               <li class="flex gap-4 items-center">
                 <span>${check}</span>Hosting
@@ -509,7 +508,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             </div>
             <p class="">Available as an add-on to your web design project!</p>
             <p class="">$500</p>
-            <h4 class=" font-bold">Features</h4>
+            <h4 class=" font-black">Features</h4>
             <ul class="relative  space-y-4 pl-6 ">
               <li class="flex gap-4 items-center">
                 <span>${check}</span>
@@ -541,7 +540,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               plan, we can schedule a call!
             </p>
             <p class="">$100/hr</p>
-            <h4 class=" font-bold">We can talk about:</h4>
+            <h4 class=" font-black">We can talk about:</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
                 <span>${check}</span>Style updates
@@ -560,10 +559,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
       </div>
     </section>
-    <section class=" text-accent py-24 flex justify-start lg:justify-center">
-      <div class="lg:max-w-[1000px] flex-grow">
+    <section class="flex justify-center">
+      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <h2
-          class="text-2xl font-bold font-callout text-light pb-8"
+          class="text-2xl font-black font-callout text-light pb-8"
           id="contact"
         >
           Let's talk!
@@ -571,44 +570,58 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         <form
           action="https://formspree.io"
           method="POST"
-          class="flex flex-col gap-4"
+          class="flex flex-col gap-4 text-light"
         >
-          <div class="form-group">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Full name"
-              required
-              class="border border-accent-three rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
-            />
+          <div class="form-group flex gap-4">
+            <div class="flex flex-col gap-2 flex-1">
+              <label for="first-name">First name *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
+              />
+            </div>
+            <div class="flex flex-col gap-2  flex-1">
+              <label for="last-name">Last name *</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                required
+                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
+              />
+            </div>
           </div>
 
-          <div class="form-group">
+          <div class="flex flex-col gap-2">
+            <label for="last-name">Email *</label>
             <input
               type="email"
               id="email"
               name="email"
-              placeholder="Email"
               required
-              class="border border-accent-three rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
+              class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
             />
           </div>
 
-          <div class="form-group">
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="How can I help you?"
-              required
-              class="border border-accent-three rounded-md px-3 py-2 focus:outline-none focus:border-accent-dark hover:border-light w-full"
-            ></textarea>
+          <div class="form-group mb-2">
+            <div class="flex flex-col gap-2">
+              <label for="last-name">How can I help you? *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
+              ></textarea>
+            </div>
           </div>
 
           <button
             type="submit"
-            class="bg-accent-three text-accent px-4 py-2 text-base font-medium  hover:text-light cursor-pointer"
+            class="bg-accent-three text-accent px-4 py-2 text-base font-medium  hover:bg-accent-three/80 cursor-pointer"
           >
             Send Message
           </button>
