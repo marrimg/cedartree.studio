@@ -198,6 +198,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </div>
           </div>
           <div class="col-span-6 p-4 flex flex-col gap-4">
+            <div class="flex-0 h-0 border-1 border-accent-three"></div>
             <img src="https://assets.marrigamard.com/antimatter-style-guide.webp" class="w-full border-accent border" />
             <div class="flex-0 h-0 border-1 border-accent-three"></div>
             <h2 class="uppercase  font-black font-callout text-accent-three text-xs" id="about">
@@ -331,8 +332,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p class="font-black font-callout text-2xl text-accent-three">$1,000</p>
             <a href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center">Get
-              started</a>
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get started</a>
             <h4 class="font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
@@ -364,7 +364,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p class="font-black font-callout text-2xl text-accent-three">$2,500</p>
             <a href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center">Get
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
               started</a>
             <h4 class=" font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
@@ -405,6 +405,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
             </div>
             <p class="font-black font-callout text-2xl text-accent-three">$150/month</p>
+                        <a href="#contact"
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
+              started</a>
             <h4 class=" font-black">Features</h4>
             <ul class=" relative  space-y-4 pl-6 ">
               <li class="flex gap-4 items-center">
@@ -528,9 +531,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
     </section>
   </main>
-  <footer class="bg-accent-bg text-accent-secondary h-42 px-12 py-12 flex justify-around items-center">
-    <div>@2026 Cedar Tree Studio</div>
-    <div>hello@cedartree.studio</div>
+  <footer class="bg-accent-bg text-accent-secondary h-42 flex justify-center items-center ">
+    <div class="border-accent-three border-t max-w-[1200px] w-full px-2 py-12 flex gap-8 justify-between text-xs text-accent-three">
+      <div>@2026 Cedar Tree Studio - Portland, OR</div>
+      <a href="mailto:hello@cedartree.studio">hello@cedartree.studio</div>
+    <div>
   </footer>
 </div>`;
 
