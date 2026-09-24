@@ -12,92 +12,58 @@ import check from "./assets/check";
 // import consultation from "./assets/consultation";
 const html = String.raw;
 
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
-  class="relative bg-accent-bg text-light"
->
+document.querySelector<HTMLDivElement>("#app")!.innerHTML =
+  html`<div class="relative bg-accent-bg text-light">
   <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky">
     <div class="bg-accent-bg absolute inset-0 opacity-97 -z-10"></div>
-    <nav
-      class="grow shrink-0 basis-auto flex flex-col justify-self-stretch  text-light"
-    >
-      <div
-        class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8"
-      >
+    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch  text-light">
+      <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
         <div class="grow-0 shrink-0 basis-auto w-40 ">${typescriptLogo}</div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
           <div class="flex items-center justify-center gap-16 flex-1">
             <a href="#about" class="menu-item hover:text-accent-hover">About</a>
-            <a href="#services" class="menu-item hover:text-accent-hover"
-              >Services</a
-            >
-            <a href="#process" class="menu-item hover:text-accent-hover"
-              >Our Process</a
-            >
-            <a href="#pricing" class="menu-item hover:text-accent-hover"
-              >Pricing</a
-            >
+            <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
+            <a href="#process" class="menu-item hover:text-accent-hover">Our Process</a>
+            <a href="#pricing" class="menu-item hover:text-accent-hover">Pricing</a>
           </div>
           <div class="grow-0 shrink-0 basis-auto hover:text-accent-hover px-12">
             <a href="#contact">Get in touch</a>
           </div>
         </div>
         <div class="lg:hidden flex items-center justify-center">
-          <button
-            id="menu-btn"
-            class="focus:outline-none text-4xl cursor-pointer z-20"
-          >
+          <button id="menu-btn" class="focus:outline-none text-4xl cursor-pointer z-20">
             ☰
           </button>
         </div>
       </div>
-      <div
-        id="mobile-menu"
-        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30  py-8 w-full"
-      >
-        <div
-          id="close-btn"
-          class="absolute top-8 right-8 text-2xl cursor-pointer"
-        >
+      <div id="mobile-menu"
+        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30  py-8 w-full">
+        <div id="close-btn" class="absolute top-8 right-8 text-2xl cursor-pointer">
           ✕
         </div>
         <div class="flex flex-col items-center justify-center gap-16 pt-16">
           <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
-          <a href="#services" class="menu-item hover:text-accent-hover"
-            >Services</a
-          >
-          <a href="#process" class="menu-item  hover:text-accent-hover"
-            >Our Process</a
-          >
-          <a href="#pricing" class="menu-item  hover:text-accent-hover"
-            >Pricing</a
-          >
-          <a class="menu-item hover:text-accent-hover" href="#contact"
-            >Get in touch</a
-          >
+          <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
+          <a href="#process" class="menu-item  hover:text-accent-hover">Our Process</a>
+          <a href="#pricing" class="menu-item  hover:text-accent-hover">Pricing</a>
+          <a class="menu-item hover:text-accent-hover" href="#contact">Get in touch</a>
         </div>
       </div>
     </nav>
   </header>
   <main class="mx-auto w-full flex flex-col">
     <section class="lg:h-[calc(100dvh-110px)] relative bg-accent-bg">
+      <div class="absolute inset-0 bg-linear-to-b from-accent-bg/80 via-30% to-accent-bg"></div>
       <div
-        class="absolute inset-0 bg-linear-to-b from-accent-bg/80 via-30% to-accent-bg"
-      ></div>
-      <div
-        class="flex flex-col h-full items-center gap-8 pt-8 lg:px-80 content-center  justify-center relative  col-span-1"
-      >
+        class="flex flex-col h-full items-center gap-8 pt-8 lg:px-80 content-center  justify-center relative  col-span-1">
         <img src="src/assets/tree.webp" class="w-44" />
         <div class="flex flex-col h-full items-center  gap-12">
-          <h1
-            class="text-8xl font-header text-center text-accent-secondary font-black"
-          >
+          <h1 class="text-8xl font-header text-center text-accent-secondary font-black">
             Web design<br />
             <span class="font-header2 ">for</span>
             <span class=" -ml-2">humans</span>
           </h1>
-          <p
-            class="font-subheader text-xl text-center leading-10 text-accent-secondary "
-          >
+          <p class="font-subheader text-xl text-center leading-10 text-accent-secondary ">
             In a sea of generic templates, a
             <span class="text-accent-three">human touch</span> is more important
             than ever. Your website needs to stand out,
@@ -105,11 +71,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             empathetically guide viewers to your goals.
           </p>
           <div class="flex items-center justify-center">
-            <a
-              href="#contact"
-              class="bg-accent-three px-8 py-4 text-accent-bg font-medium hover:accent-three/80 rounded-full hover:text-light"
-              >Get in touch</a
-            >
+            <a href="#contact"
+              class="bg-accent-three px-8 py-4 text-accent-bg font-medium hover:accent-three/80 rounded-full hover:text-light">Get
+              in touch</a>
           </div>
         </div>
       </div>
@@ -118,10 +82,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
-          <h2
-            class="uppercase font-black font-callout text-accent-three text-xs "
-            id="about"
-          >
+          <h2 class="uppercase font-black font-callout text-accent-three text-xs " id="about">
             About me
           </h2>
         </div>
@@ -166,10 +127,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
-          <h2
-            class="uppercase font-black font-callout text-accent-three text-xs "
-            id="about"
-          >
+          <h2 class="uppercase font-black font-callout text-accent-three text-xs " id="about">
             Services
           </h2>
         </div>
@@ -189,9 +147,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
                 <a href="#contact" class="text-accent-three">Get started →</a>
               </div>
             </div>
-            <div
-              class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15"
-            >
+            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${webDesign}</div>
                 <h2 class="font-black font-callout text-2xl">Web design</h2>
@@ -205,14 +161,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
                   walk through what you want to accomplish with your site and
                   create a design that helps guide your customers to that goal.
                 </p>
-                <a href="#contact" class="text-accent-three"
-                  >Get started with your website →</a
-                >
+                <a href="#contact" class="text-accent-three">Get started with your website →</a>
               </div>
             </div>
-            <div
-              class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15"
-            >
+            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${webDev}</div>
                 <h2 class="font-black font-callout text-2xl">
@@ -225,14 +177,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
                   choose the platform that is right for you. I currently work
                   with Wordpress and Squarespace.
                 </p>
-                <a href="#contact" class="text-accent-three"
-                  >Get started with your website →</a
-                >
+                <a href="#contact" class="text-accent-three">Get started with your website →</a>
               </div>
             </div>
-            <div
-              class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15"
-            >
+            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-accent-three">${support}</div>
                 <h2 class="font-black font-callout text-2xl">Support</h2>
@@ -245,159 +193,134 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
                   elsewhere, you can book me for a call to answer any of your
                   questions!
                 </p>
-                <a href="#contact" class="text-accent-three"
-                  >Ask me about hosting →</a
-                >
+                <a href="#contact" class="text-accent-three">Ask me about hosting →</a>
               </div>
             </div>
           </div>
-          <div class="col-span-6 p-4">
-            <img
-              src="https://assets.marrigamard.com/antimatter-style-guide.webp"
-              class="w-full border-accent border"
-            />
-        <div class="flex gap-2 items-center pb-2 pt-4">
-          <h2
-            class="uppercase  font-black font-callout text-light text-xs "
-            id="about"
-          >
-            Custom brand guides
-          </h2>
-        </div>
+          <div class="col-span-6 p-4 flex flex-col gap-4">
+            <img src="https://assets.marrigamard.com/antimatter-style-guide.webp" class="w-full border-accent border" />
+            <div class="flex-0 h-0 border-1 border-accent-three"></div>
+            <h2 class="uppercase  font-black font-callout text-accent-three text-xs" id="about">
+              Custom brand guides
+            </h2>
+            <div class="flex gap-2 items-center pb-2 pt-4 justify-between">
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="flex justify-center"">
-      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
-        <div class="flex gap-2 items-center pb-2">
-          <div class="w-15 h-0 border-1 border-accent-three "></div>
-          <h2
-            class="uppercase font-black font-callout text-accent-three text-xs "
-            id="about"
-          >
-            Process
-          </h2>
-        </div>
-
-        <ol class="grid  grid-cols-1">
-          <li class="flex gap-8 align-center items-center border-light/15">
-            <span class="text-accent-three">01</span>
-            <div class="flex flex-col gap-4 p-8">
-              <h3 class="font-black font-callout text-2xl">Discovery</h3>
-              <p>
-                If you have a project in mind,
-                <a href="#contact" class="text-accent-three">contact me</a> and
-                we'll book a complimentary discovery call! If we seem like a
-                good fit, you'll pay a 1/3 deposit and I'll get you on my
-                calendar!
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex gap-8 align-center items-center border-t border-light/15"
-          >
-            <span class="text-accent-three">02</span>
-            <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-black font-callout text-2xl">Strategy</h3>
-              <p>
-                After booking, we'll get on a call and really dive into what you
-                want to accomplish with your website. We'll choose a primary and
-                secondary goal and talk through how to design the website to
-                accomplish those goals. We'll map out your website's pages and
-                discuss branding, content and images. We'll discuss which
-                platfrom works best for you and go over long-term support
-                options.
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex gap-8 align-center items-center border-t border-light/15"
-          >
-            <span class="text-accent-three">03</span>
-            <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-black font-callout text-2xl">Preparation</h3>
-              <p>
-                After getting our plan in place, we'll kick off some time for
-                preparation. This will give us time to work on anything that
-                needs to be done before development starts. If you're supplying
-                the copy, photos, and other brand assets for your website, this
-                will give you time to send me these things. If you added on a
-                mini-brand package, I will spend this time working on your
-                brand. Towards the end of the prep period, we'll schedule some
-                time for feedback (if needed) before development starts.
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex gap-8 align-center items-center border-t border-light/15"
-          >
-            <span class="text-accent-three">04</span>
-            <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-black font-callout text-2xl">Development</h3>
-              <p>
-                Once all the branding and assets are good to go, I'll start
-                developing your website. If you're not supplying brand assets
-                and choose not to go forward with the mini brand package, I will
-                use my default tasteful font selection and color pallette. We'll
-                check in at the halfway point and near the end of this period
-                for questions, feedback, and revisions.
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex gap-8 align-center items-center border-t border-light/15"
-          >
-            <span class="text-accent-three">05</span>
-            <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-black font-callout text-2xl">Launch</h3>
-              <p>
-                I wrap up any final tweaks, you'll make your final payment, and
-                we'll launch your new website!
-              </p>
-            </div>
-          </li>
-          <li
-            class="flex gap-8 align-center items-center border-t border-light/15"
-          >
-            <span class="text-accent-three">06</span>
-            <div class="flex flex-col gap-4  p-8">
-              <h3 class="font-black font-callout text-2xl">Support</h3>
-              <p>
-                All clients get two weeks of free email support after launch.
-              </p>
-              <p>
-                If you purchase Wordpress hosting through me, we'll start a new
-                contract for a monthly subscription. This service includes
-                hosting, software updates, email support, and two free support
-                calls a month.
-              </p>
-              <p>
-                If you self-host your Wordpress site or host on Squarespace, you
-                can always book me for an hour-long support call!
-              </p>
-            </div>
-          </li>
-        </ol>
+      <div class=" flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
+      <div class="flex gap-2 items-center pb-2">
+        <div class="w-15 h-0 border-1 border-accent-three "></div>
+        <h2 class="uppercase font-black font-callout text-accent-three text-xs " id="about">
+          Process
+        </h2>
       </div>
+
+      <ol class="grid  grid-cols-1">
+        <li class="flex gap-8 align-center items-center border-light/15">
+          <span class="text-accent-three">01</span>
+          <div class="flex flex-col gap-4 p-8">
+            <h3 class="font-black font-callout text-2xl">Discovery</h3>
+            <p>
+              If you have a project in mind,
+              <a href="#contact" class="text-accent-three">contact me</a> and
+              we'll book a complimentary discovery call! If we seem like a
+              good fit, you'll pay a 1/3 deposit and I'll get you on my
+              calendar!
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
+          <span class="text-accent-three">02</span>
+          <div class="flex flex-col gap-4  p-8">
+            <h3 class="font-black font-callout text-2xl">Strategy</h3>
+            <p>
+              After booking, we'll get on a call and really dive into what you
+              want to accomplish with your website. We'll choose a primary and
+              secondary goal and talk through how to design the website to
+              accomplish those goals. We'll map out your website's pages and
+              discuss branding, content and images. We'll discuss which
+              platfrom works best for you and go over long-term support
+              options.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
+          <span class="text-accent-three">03</span>
+          <div class="flex flex-col gap-4  p-8">
+            <h3 class="font-black font-callout text-2xl">Preparation</h3>
+            <p>
+              After getting our plan in place, we'll kick off some time for
+              preparation. This will give us time to work on anything that
+              needs to be done before development starts. If you're supplying
+              the copy, photos, and other brand assets for your website, this
+              will give you time to send me these things. If you added on a
+              mini-brand package, I will spend this time working on your
+              brand. Towards the end of the prep period, we'll schedule some
+              time for feedback (if needed) before development starts.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
+          <span class="text-accent-three">04</span>
+          <div class="flex flex-col gap-4  p-8">
+            <h3 class="font-black font-callout text-2xl">Development</h3>
+            <p>
+              Once all the branding and assets are good to go, I'll start
+              developing your website. If you're not supplying brand assets
+              and choose not to go forward with the mini brand package, I will
+              use my default tasteful font selection and color pallette. We'll
+              check in at the halfway point and near the end of this period
+              for questions, feedback, and revisions.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
+          <span class="text-accent-three">05</span>
+          <div class="flex flex-col gap-4  p-8">
+            <h3 class="font-black font-callout text-2xl">Launch</h3>
+            <p>
+              I wrap up any final tweaks, you'll make your final payment, and
+              we'll launch your new website!
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
+          <span class="text-accent-three">06</span>
+          <div class="flex flex-col gap-4  p-8">
+            <h3 class="font-black font-callout text-2xl">Support</h3>
+            <p>
+              All clients get two weeks of free email support after launch.
+            </p>
+            <p>
+              If you purchase Wordpress hosting through me, we'll start a new
+              contract for a monthly subscription. This service includes
+              hosting, software updates, email support, and two free support
+              calls a month.
+            </p>
+            <p>
+              If you self-host your Wordpress site or host on Squarespace, you
+              can always book me for an hour-long support call!
+            </p>
+          </div>
+        </li>
+      </ol>
+
     </section>
 
     <section class="flex justify-center">
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-16">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
-          <h2
-            class="uppercase font-black font-callout text-accent-three text-xs "
-            id="pricing"
-          >
+          <h2 class="uppercase font-black font-callout text-accent-three text-xs " id="pricing">
             Pricing
           </h2>
         </div>
         <div class="grid lg:grid-cols-2 gap-8">
-          <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
-          >
+          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
               <span class="stroke-accent-three">${basicBrowser}</span>
               <h3 class="font-black font-callout text-2xl">Basic site</h3>
@@ -407,11 +330,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               business on a budget.
             </p>
             <p class="font-black font-callout text-2xl text-accent-three">$1,000</p>
-            <a
-              href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
-              >Get started</a
-            >
+            <a href="#contact"
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center">Get
+              started</a>
             <h4 class="font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
@@ -432,9 +353,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </li>
             </ul>
           </div>
-          <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
-          >
+          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
             <div class="flex items-center gap-4">
               <span class="stroke-accent-three">${advancedBrowser}</span>
               <h3 class="font-black font-callout text-2xl">Advanced site</h3>
@@ -444,11 +363,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               package.
             </p>
             <p class="font-black font-callout text-2xl text-accent-three">$2,500</p>
-            <a
-              href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
-              >Get started</a
-            >
+            <a href="#contact"
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center">Get
+              started</a>
             <h4 class=" font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
@@ -482,9 +399,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </li>
             </ul>
           </div>
-          <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
-          >
+          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
             <div class="flex gap-4 items-center ">
               <span class="stroke-accent-three">${server}</span>
               <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
@@ -507,9 +422,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </li>
             </ul>
           </div>
-          <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
-          >
+          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
               <div class="stroke-accent-three">${bulb}</div>
               <h3 class="font-black font-callout text-2xl">Custom Mini-brand</h3>
@@ -536,9 +449,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </li>
             </ul>
           </div>
-          <div
-            class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4"
-          >
+          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
               <span class="stroke-accent-three">${hourly}</span>
               <h3 class="font-black font-callout text-2xl">Hourly rate</h3>
@@ -569,88 +480,59 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
     </section>
     <section class=" text-accent py-16 flex justify-start lg:justify-center">
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
-        <h2
-          class="text-4xl font-black font-callout text-light pb-8"
-          id="contact"
-        >
+        <h2 class="text-4xl font-black font-callout text-light pb-8" id="contact">
           Let's talk!
-         </h2>
-         <div class="flex gap-16">
-         <div class="flex-4 text-light">
-         <p class="mb-5">Have an idea for a project? Reach out and we can schedule a free, no-pressure call!</p>
-         <p class="mb-5">We'll go over your goals and decide if we're a good fit for your project. If we are, we'll sign the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
-         <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
-         </div>
-        <form
-          action="https://formspree.io"
-          method="POST"
-          class="flex flex-col gap-4 text-light flex-6"
-        >
-          <div class="form-group flex gap-4">
-            <div class="flex flex-col gap-2 flex-1">
-              <label for="first-name">First name *</label>
-              <input
-                type="text"
-                id="first-name"
-                name="first-name"
-                required
-                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
-              />
-            </div>
-            <div class="flex flex-col gap-2  flex-1">
-              <label for="last-name">Last name *</label>
-              <input
-                type="text"
-                id="last-name"
-                name="last-name"
-                required
-                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
-              />
-            </div>
+        </h2>
+        <div class="flex gap-16">
+          <div class="flex-4 text-light">
+            <p class="mb-5">Have an idea for a project? Reach out and we can schedule a free, no-pressure call!</p>
+            <p class="mb-5">We'll go over your goals and decide if we're a good fit for your project. If we are, we'll
+              sign
+              the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
+            <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
           </div>
+          <form action="https://formspree.io" method="POST" class="flex flex-col gap-4 text-light flex-6">
+            <div class="form-group flex gap-4">
+              <div class="flex flex-col gap-2 flex-1">
+                <label for="first-name">First name *</label>
+                <input type="text" id="first-name" name="first-name" required
+                  class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
+              </div>
+              <div class="flex flex-col gap-2  flex-1">
+                <label for="last-name">Last name *</label>
+                <input type="text" id="last-name" name="last-name" required
+                  class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
+              </div>
+            </div>
 
-          <div class="flex flex-col gap-2">
-            <label for="last-name">Email *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
-            />
-          </div>
-
-          <div class="form-group mb-2">
             <div class="flex flex-col gap-2">
-              <label for="last-name">How can I help you? *</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"
-              ></textarea>
+              <label for="last-name">Email *</label>
+              <input type="email" id="email" name="email" required
+                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
             </div>
-          </div>
 
-          <button
-            type="submit"
-            class="bg-accent-three text-accent px-4 py-2 text-base font-medium  hover:bg-accent-three/80 cursor-pointer"
-          >
-            Send Message
-          </button>
-        </form>
+            <div class="form-group mb-2">
+              <div class="flex flex-col gap-2">
+                <label for="last-name">How can I help you? *</label>
+                <textarea id="message" name="message" rows="5" required
+                  class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"></textarea>
+              </div>
+            </div>
+
+            <button type="submit"
+              class="bg-accent-three text-accent px-4 py-2 text-base font-medium  hover:bg-accent-three/80 cursor-pointer">
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>
   </main>
-  <footer
-    class="bg-accent-bg text-accent-secondary h-42 px-12 py-12 flex justify-around items-center"
-  >
+  <footer class="bg-accent-bg text-accent-secondary h-42 px-12 py-12 flex justify-around items-center">
     <div>@2026 Cedar Tree Studio</div>
     <div>hello@cedartree.studio</div>
   </footer>
-</div> `;
+</div>`;
 
 const menuBtn = document.getElementById("menu-btn");
 const menuItems = document.querySelectorAll(".menu-item");
