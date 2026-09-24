@@ -251,11 +251,19 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
               </div>
             </div>
           </div>
-          <div class="col-span-6">
+          <div class="col-span-6 p-4">
             <img
               src="https://assets.marrigamard.com/antimatter-style-guide.webp"
-              class="w-full"
+              class="w-full border-accent border"
             />
+        <div class="flex gap-2 items-center pb-2 pt-4">
+          <h2
+            class="uppercase  font-black font-callout text-light text-xs "
+            id="about"
+          >
+            Custom brand guides
+          </h2>
+        </div>
           </div>
         </div>
       </div>
@@ -392,13 +400,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <div class="flex gap-4 items-center">
               <span class="stroke-accent-three">${basicBrowser}</span>
-              <h3 class="text-lg">Web development: Basic site</h3>
+              <h3 class="font-black font-callout text-2xl">Basic site</h3>
             </div>
-            <p class="">
+            <p>
               A blazing-fast, SEO optimized static website. Perfect for a small
               business on a budget.
             </p>
-            <p class="">$1,000</p>
+            <p class="font-black font-callout text-2xl text-accent-three">$1,000</p>
             <a
               href="#contact"
               class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
@@ -429,13 +437,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <div class="flex items-center gap-4">
               <span class="stroke-accent-three">${advancedBrowser}</span>
-              <h3 class="text-lg">Web development: Advanced site</h3>
+              <h3 class="font-black font-callout text-2xl">Advanced site</h3>
             </div>
             <p class="">
               Increase sales, appointments, or donations with my advanced site
               package.
             </p>
-            <p class="">$2,500</p>
+            <p class="font-black font-callout text-2xl text-accent-three">$2,500</p>
             <a
               href="#contact"
               class="bg-accent-three text-accent px-4 py-2 text-base font-medium hover:border-light hover:text-light text-center"
@@ -479,9 +487,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <div class="flex gap-4 items-center ">
               <span class="stroke-accent-three">${server}</span>
-              <h3 class="text-lg">Site Hosting</h3>
+              <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
             </div>
-            <p class="">$150/month</p>
+            <p class="font-black font-callout text-2xl text-accent-three">$150/month</p>
             <h4 class=" font-black">Features</h4>
             <ul class=" relative  space-y-4 pl-6 ">
               <li class="flex gap-4 items-center">
@@ -504,10 +512,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <div class="flex gap-4 items-center">
               <div class="stroke-accent-three">${bulb}</div>
-              <h3 class="text-lg">Custom Mini-brand</h3>
+              <h3 class="font-black font-callout text-2xl">Custom Mini-brand</h3>
             </div>
-            <p class="">Available as an add-on to your web design project!</p>
-            <p class="">$500</p>
+            <p>Available as an add-on to your web design project!</p>
+            <p class="font-black font-callout text-2xl text-accent-three">$500</p>
             <h4 class=" font-black">Features</h4>
             <ul class="relative  space-y-4 pl-6 ">
               <li class="flex gap-4 items-center">
@@ -533,13 +541,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
           >
             <div class="flex gap-4 items-center">
               <span class="stroke-accent-three">${hourly}</span>
-              <h3 class="text-lg">Hourly rate</h3>
+              <h3 class="font-black font-callout text-2xl">Hourly rate</h3>
             </div>
             <p>
               If you've worked with me on a project and you don't have a hosting
               plan, we can schedule a call!
             </p>
-            <p class="">$100/hr</p>
+            <p class="font-black font-callout text-2xl text-accent-three">$100/hr</p>
             <h4 class=" font-black">We can talk about:</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
@@ -559,18 +567,24 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
         </div>
       </div>
     </section>
-    <section class="flex justify-center">
+    <section class=" text-accent py-16 flex justify-start lg:justify-center">
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
         <h2
-          class="text-2xl font-black font-callout text-light pb-8"
+          class="text-4xl font-black font-callout text-light pb-8"
           id="contact"
         >
           Let's talk!
-        </h2>
+         </h2>
+         <div class="flex gap-16">
+         <div class="flex-4 text-light">
+         <p class="mb-5">Have an idea for a project? Reach out and we can schedule a free, no-pressure call!</p>
+         <p class="mb-5">We'll go over your goals and decide if we're a good fit for your project. If we are, we'll sign the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
+         <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
+         </div>
         <form
           action="https://formspree.io"
           method="POST"
-          class="flex flex-col gap-4 text-light"
+          class="flex flex-col gap-4 text-light flex-6"
         >
           <div class="form-group flex gap-4">
             <div class="flex flex-col gap-2 flex-1">
@@ -626,6 +640,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = html`<div
             Send Message
           </button>
         </form>
+        </div>
       </div>
     </section>
   </main>
