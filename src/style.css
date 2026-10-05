@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
 @import "tailwindcss";
 :root {
-  --text: #1e4941;
-  --text-light: #fcf8f4;
-  --color-accent: #364732;
+  --color-text-dark: #364732;
+  --color-text-light: #fcf8f4;
+  --color-accent: #b97922;
   --color-bg-dark: #1e4941;
-  --color-accent-dark: #494d09;
+  --color-bg-light: #fcf8f4;
   --color-accent-hover: #6b6375;
-  --color-accent-bg: #fcf8f4;
-  --color-accent-fourth: #b97922;
-  --color-accent-secondary: #1e4941;
+  --color-accent-secondary: #364732;
 
   font: 18px/145% var(--sans);
 
   /* letter-spacing: 0.18px; */
   line-height: 1.5rem;
   color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -113,11 +109,10 @@ a {
   --font-callout: "Inter";
   --color-on-dark-bg: var(--text-on-dark-bg);
   --color-bg-dark: var(--color-bg-dark);
-  --color-accent-dark: var(--color-accent-dark);
-  --color-accent-bg: var(--color-accent-bg);
-  --color-light: var(--text-light);
+  --color-bg-light: var(--color-bg-light);
+  --color-text-dark: var(--color-text-dark);
+  --color-text-light: var(--text-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
   --color-accent-secondary: var(--color-accent-secondary);
-  --color-accent-three: var(--color-accent-fourth);
 }
