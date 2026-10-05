@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
 @import "tailwindcss";
 :root {
-  --color-text-dark: #36443e;
-  --color-text-light: #fcf8f4;
+  --color-dark: #37433f;
+  --color-light: #f9f4ef;
   --color-accent: #be8b49;
-  --color-bg-dark: #36443e;
-  --color-bg-light: #fcf8f4;
   --color-accent-hover: #6b6375;
   --color-accent-secondary: #364732;
 
@@ -107,11 +105,8 @@ a {
   --font-header2: "Yesteryear";
   --font-subheader: "Trykker";
   --font-callout: "Inter";
-  --color-on-dark-bg: var(--text-on-dark-bg);
-  --color-bg-dark: var(--color-bg-dark);
-  --color-bg-light: var(--color-bg-light);
-  --color-text-dark: var(--color-text-dark);
-  --color-text-light: var(--text-light);
+  --color-dark: var(--color-dark);
+  --color-light: var(--color-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
   --color-accent-secondary: var(--color-accent-secondary);

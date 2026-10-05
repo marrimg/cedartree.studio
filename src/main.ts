@@ -13,8 +13,8 @@ import check from "./assets/check";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
-  html`<div class="relative  bg-bg-light text-text-dark">
-  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky bg-bg-light">
+  html`<div class="relative  bg-light text-dark">
+  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky bg-light">
     <div class=" absolute inset-0 opacity-97 -z-10"></div>
     <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch ">
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
@@ -59,18 +59,18 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         <dotlottie-wc
           src="./src/assets/tree.json"
           speed="1.5"
-          class="w-[20vh] aspect-square"
+          class="w-[16vh] aspect-square"
           mode="forward"
           loop
           autoplay
         ></dotlottie-wc>
         <div class="flex flex-col items-center  gap-12">
-          <h1 class="text-7xl font-header text-center  font-black">
+          <h1 class="text-8xl font-header text-center  font-black">
             Websites<br />
             <span class="font-header2 ">for</span>
             <span class=" -ml-2 ">real people</span>
           </h1>
-          <p class="font-subheader text-xl text-center leading-10 text-accent-secondary ">
+          <p class="font-subheader text-xl text-center leading-10 text-accent-secondary max-w-180">
             In a sea of generic templates, a
             <span class="text-accent">human touch</span> is more important
             than ever. Your website needs to stand out,
@@ -79,13 +79,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </p>
           <div class="flex items-center justify-center">
             <a href="#contact"
-              class="bg-accent px-8 py-4 text-text-light font-medium hover:accent/80 rounded-full hover:text-text-light">Get
+              class="bg-accent px-8 py-4 text-light font-medium hover:accent/80 rounded-full hover:text-light">Get
               in touch</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="flex justify-center bg-bg-dark text-text-light">
+    <section class="flex justify-center bg-dark text-light">
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-24 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent "></div>
@@ -95,7 +95,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         </div>
 
         <ul class="grid grid-cols-3">
-          <li class="p-8 flex flex-col gap-4 border-r border-bg-light/15">
+          <li class="p-8 flex flex-col gap-4 border-r border-light/15">
             <h2 class="font-black font-callout text-2xl" id="about">
               Who I am
             </h2>
@@ -106,12 +106,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               goals.
             </p>
           </li>
-          <li class="p-8 flex flex-col gap-4 border-r border-bg-light/15">
+          <li class="p-8 flex flex-col gap-4 border-r border-light/15">
             <h2 class="font-black font-callout text-2xl">What I do</h2>
             <p>
-              I cover the full path from designing your website to ensuring its
-              success. I can take care of branding, web development on
-              Squarespace or WordPress, SEO, and hosting. Choose the services
+              I cover the full path from designing your website to deploying it and ensuring its
+              success. I can take care of branding, web development, SEO, and hosting. Choose the services
               you need!
             </p>
           </li>
@@ -121,8 +120,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </h2>
             <p>
               I specialize in working with
-              <span class="text-accent">small businesses</span> and
-              <span class="text-accent">nonprofits</span> who are looking
+              small businesses and nonprofits who are looking
               to improve their web presence.
             </p>
           </li>
@@ -140,40 +138,24 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         </div>
         <div class="grid grid-cols-12 gap-8">
           <div class="col-span-6">
-            <div class=" px-4 pb-6 pt-4 ">
+
+            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 ">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-bg-dark">${bulb}</div>
-                <h2 class="font-black font-callout text-2xl">Branding</h2>
-              </div>
-              <div class="grid gap-4">
-                <p>
-                  Are you starting a new business and don't have an established
-                  brand? Does your current brand feel outdated or unfocused? Add
-                  a mini-brand package to your web project and let me help!
-                </p>
-                <a href="#contact" class="text-accent">Get started →</a>
-              </div>
-            </div>
-            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-bg-dark/15">
-              <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-bg-dark">${webDesign}</div>
+                <div class="stroke-dark">${webDesign}</div>
                 <h2 class="font-black font-callout text-2xl">Web design</h2>
               </div>
               <div class="grid gap-4">
                 <p>
-                  You don't want a site that looks like everyone else's. You're
-                  not looking for overused templates or AI slop. You want a
-                  website that tells your unique story and enables your
-                  customers to easily find what they want. I can do that! We'll
+ I build websites that make it easier for people to understand what you do and say "yes." My approach is calm, practical, and focused on how real people read and decide online.We'll
                   walk through what you want to accomplish with your site and
                   create a design that helps guide your customers to that goal.
                 </p>
                 <a href="#contact" class="text-accent">Get started with your website →</a>
               </div>
             </div>
-            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-bg-dark/15">
+            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-dark/15">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-bg-dark">${webDev}</div>
+                <div class="stroke-dark">${webDev}</div>
                 <h2 class="font-black font-callout text-2xl">
                   Web development
                 </h2>
@@ -187,9 +169,23 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
                 <a href="#contact" class="text-accent">Get started with your website →</a>
               </div>
             </div>
-            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-bg-dark/15">
+              <div class=" px-4 pb-6 pt-4 border-t border-dark/15">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-bg-dark">${support}</div>
+                <div class="stroke-dark">${bulb}</div>
+                <h2 class="font-black font-callout text-2xl">Branding</h2>
+              </div>
+              <div class="grid gap-4">
+                <p>
+                  Are you starting a new business and don't have an established
+                  brand? Does your current brand feel outdated or unfocused? Add
+                  a mini-brand package to your web project and let me help!
+                </p>
+                <a href="#contact" class="text-accent">Get started →</a>
+              </div>
+            </div>
+            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-dark/15">
+              <div class="flex gap-4 items-center pb-4">
+                <div class="stroke-dark">${support}</div>
                 <h2 class="font-black font-callout text-2xl">Support</h2>
               </div>
               <div class="grid gap-4">
@@ -218,7 +214,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
     </section>
 
-    <section class="flex justify-center bg-bg-dark text-text-light">
+    <section class="flex justify-center bg-dark text-light">
       <div class=" flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
       <div class="flex gap-2 items-center pb-2">
         <div class="w-15 h-0 border-1 border-accent "></div>
@@ -228,7 +224,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
 
       <ol class="grid  grid-cols-1">
-        <li class="flex gap-8 align-center items-center border-bg-light/15">
+        <li class="flex gap-8 align-center items-center border-light/15">
           <span class="text-accent">01</span>
           <div class="flex flex-col gap-4 p-8">
             <h3 class="font-black font-callout text-2xl">Discovery</h3>
@@ -241,7 +237,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-bg-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
           <span class="text-accent">02</span>
           <div class="flex flex-col gap-4  p-8">
             <h3 class="font-black font-callout text-2xl">Strategy</h3>
@@ -256,7 +252,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-bg-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
           <span class="text-accent">03</span>
           <div class="flex flex-col gap-4  p-8">
             <h3 class="font-black font-callout text-2xl">Preparation</h3>
@@ -272,7 +268,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-bg-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
           <span class="text-accent">04</span>
           <div class="flex flex-col gap-4  p-8">
             <h3 class="font-black font-callout text-2xl">Development</h3>
@@ -286,7 +282,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-bg-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
           <span class="text-accent">05</span>
           <div class="flex flex-col gap-4  p-8">
             <h3 class="font-black font-callout text-2xl">Launch</h3>
@@ -296,7 +292,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-bg-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15">
           <span class="text-accent">06</span>
           <div class="flex flex-col gap-4  p-8">
             <h3 class="font-black font-callout text-2xl">Support</h3>
@@ -328,9 +324,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </h2>
         </div>
         <div class="grid lg:grid-cols-2 gap-8">
-          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
-              <span class="stroke-bg-dark">${basicBrowser}</span>
+              <span class="stroke-dark">${basicBrowser}</span>
               <h3 class="font-black font-callout text-2xl">Basic site</h3>
             </div>
             <p>
@@ -339,7 +335,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p class="font-black font-callout text-2xl text-accent">$1,000</p>
             <a href="#contact"
-              class="bg-accent text-text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get started</a>
+              class="bg-accent text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get started</a>
             <h4 class="font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
@@ -360,9 +356,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
             <div class="flex items-center gap-4">
-              <span class="stroke-bg-dark">${advancedBrowser}</span>
+              <span class="stroke-dark">${advancedBrowser}</span>
               <h3 class="font-black font-callout text-2xl">Advanced site</h3>
             </div>
             <p class="">
@@ -371,7 +367,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p class="font-black font-callout text-2xl text-accent">$2,500</p>
             <a href="#contact"
-              class="bg-accent text-text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get
+              class="bg-accent text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get
               started</a>
             <h4 class=" font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
@@ -406,14 +402,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center ">
-              <span class="stroke-bg-dark">${server}</span>
+              <span class="stroke-dark">${server}</span>
               <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
             </div>
             <p class="font-black font-callout text-2xl text-accent">$150/month</p>
               <a href="#contact"
-              class="bg-accent text-text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get
+              class="bg-accent text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get
               started</a>
             <h4 class=" font-black">Features</h4>
             <ul class=" relative  space-y-4 pl-6 ">
@@ -432,9 +428,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
-              <div class="stroke-bg-dark">${bulb}</div>
+              <div class="stroke-dark">${bulb}</div>
               <h3 class="font-black font-callout text-2xl">Custom Mini-brand</h3>
             </div>
             <p>Available as an add-on to your web design project!</p>
@@ -459,9 +455,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
-              <span class="stroke-bg-dark">${hourly}</span>
+              <span class="stroke-dark">${hourly}</span>
               <h3 class="font-black font-callout text-2xl">Hourly rate</h3>
             </div>
             <p>
@@ -506,31 +502,31 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               <div class="flex flex-col gap-2 flex-1">
                 <label for="first-name">First name *</label>
                 <input type="text" id="first-name" name="first-name" required
-                  class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
+                  class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
               </div>
               <div class="flex flex-col gap-2  flex-1">
                 <label for="last-name">Last name *</label>
                 <input type="text" id="last-name" name="last-name" required
-                  class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
+                  class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
               </div>
             </div>
 
             <div class="flex flex-col gap-2">
               <label for="last-name">Email *</label>
               <input type="email" id="email" name="email" required
-                class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
+                class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
             </div>
 
             <div class="form-group mb-2">
               <div class="flex flex-col gap-2">
                 <label for="last-name">How can I help you? *</label>
                 <textarea id="message" name="message" rows="5" required
-                  class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full"></textarea>
+                  class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full"></textarea>
               </div>
             </div>
 
             <button type="submit"
-              class="bg-accent text-text-light px-4 py-2 text-base font-medium  hover:bg-accent/80 cursor-pointer">
+              class="bg-accent text-light px-4 py-2 text-base font-medium  hover:bg-accent/80 cursor-pointer">
               Send Message
             </button>
           </form>
