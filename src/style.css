@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
 @import "tailwindcss";
 :root {
   --text: #6b6375;
@@ -8,11 +9,12 @@
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --color-text: #fff;
-  --color-accent: #283425;
+  --color-accent: #364732;
   --color-accent-dark: #494d09;
   --color-accent-hover: #6b6375;
-  --color-accent-bg: #a54708;
-  --color-accent-third: #67412a;
+  --color-accent-bg: #22342c;
+  --color-accent-third: #81e8b0;
+  --color-accent-fourth: #a35a29;
   --color-accent-secondary: #eceae0;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -24,7 +26,9 @@
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+
+  /* letter-spacing: 0.18px; */
+  line-height: 1.5rem;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -42,6 +46,37 @@ a {
   cursor: pointer;
 }
 
+body {
+  /* background:
+    radial-gradient(
+      100% 100% at var(--20-x-position, 87.3047%) var(--20-y-position, 96.875%),
+      #027443 -57%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--21-x-position, 15.7031%) var(--21-y-position, 53.4375%),
+      #22342c 47%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--22-x-position, 43.4766%) var(--22-y-position, 10.8594%),
+      #0f8a5b -91%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--23-x-position, 51.875%) var(--23-y-position, 50.2734%),
+      #22342c 21%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--24-x-position, 88.2031%) var(--24-y-position, 48.3594%),
+      #032d28 49%,
+      transparent
+    ), */
+  /* #027443; */
+  background: #22342c;
+}
+
 @font-face {
   font-family: "JostVariable";
   src: url("./assets/Jost-VariableFont_wght.woff2") format("woff2");
@@ -49,13 +84,27 @@ a {
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "PlayfairVariable";
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/Inter-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair";
   src: url("./assets/Playfair-VariableFont_opsz,wdth,wght.woff2")
     format("woff2");
   font-weight: 100 900;
   font-style: normal;
-} */
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/Manrope-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "CrimsonTextSemiBold";
@@ -65,16 +114,18 @@ a {
 }
 
 @font-face {
-  font-family: "CrimsonTextRegular";
-  src: url("./assets/CrimsonText-Regular.woff2") format("woff2");
+  font-family: "Trykker";
+  src: url("./assets/Trykker-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @theme {
-  --font-body: "JostVariable";
-  --font-header: "CrimsonTextSemiBold";
-  --font-callout: "CrimsonTextRegular";
+  --font-body: "Inter";
+  --font-header: "Trykker";
+  --font-header2: "Yesteryear";
+  --font-subheader: "Trykker";
+  --font-callout: "Inter";
   --color-on-dark-bg: var(--text-on-dark-bg);
   --color-accent-dark: var(--color-accent-dark);
   --color-accent-bg: var(--color-accent-bg);
