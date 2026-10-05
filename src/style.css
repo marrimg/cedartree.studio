@@ -2,29 +2,14 @@
 @import "tailwindcss";
 :root {
   --text: #1e4941;
-  --text-h: #36443e;
   --text-light: #fcf8f4;
-  --color-on-dark-bg: #d2e0d2;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --color-text: #fff;
   --color-accent: #364732;
   --color-bg-dark: #1e4941;
   --color-accent-dark: #494d09;
   --color-accent-hover: #6b6375;
   --color-accent-bg: #fcf8f4;
-  --color-accent-third: #81e8b0;
   --color-accent-fourth: #b97922;
   --color-accent-secondary: #1e4941;
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
 
