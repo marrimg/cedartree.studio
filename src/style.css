@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
 @import "tailwindcss";
 :root {
-  --text: #6b6375;
+  --text: #1e4941;
   --text-h: #36443e;
-  --text-light: #bac5ba;
+  --text-light: #fcf8f4;
   --color-on-dark-bg: #d2e0d2;
   --bg: #fff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --color-text: #fff;
   --color-accent: #364732;
+  --color-bg-dark: #1e4941;
   --color-accent-dark: #494d09;
   --color-accent-hover: #6b6375;
-  --color-accent-bg: #22342c;
+  --color-accent-bg: #fcf8f4;
   --color-accent-third: #81e8b0;
-  --color-accent-fourth: #a35a29;
-  --color-accent-secondary: #eceae0;
+  --color-accent-fourth: #b97922;
+  --color-accent-secondary: #1e4941;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
@@ -46,8 +47,8 @@ a {
   cursor: pointer;
 }
 
-body {
-  /* background:
+/* body { */
+/* background:
     radial-gradient(
       100% 100% at var(--20-x-position, 87.3047%) var(--20-y-position, 96.875%),
       #027443 -57%,
@@ -73,9 +74,8 @@ body {
       #032d28 49%,
       transparent
     ), */
-  /* #027443; */
-  background: #22342c;
-}
+/* #027443; */
+/* } */
 
 @font-face {
   font-family: "JostVariable";
@@ -127,11 +127,12 @@ body {
   --font-subheader: "Trykker";
   --font-callout: "Inter";
   --color-on-dark-bg: var(--text-on-dark-bg);
+  --color-bg-dark: var(--color-bg-dark);
   --color-accent-dark: var(--color-accent-dark);
   --color-accent-bg: var(--color-accent-bg);
   --color-light: var(--text-light);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
   --color-accent-secondary: var(--color-accent-secondary);
-  --color-accent-three: var(--color-accent-third);
+  --color-accent-three: var(--color-accent-fourth);
 }

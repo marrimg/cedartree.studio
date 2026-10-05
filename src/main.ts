@@ -13,10 +13,10 @@ import check from "./assets/check";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
-  html`<div class="relative  text-light">
-  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky">
+  html`<div class="relative  bg-accent-bg">
+  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky bg-accent-bg">
     <div class=" absolute inset-0 opacity-97 -z-10"></div>
-    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch  text-light">
+    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch ">
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
         <div class="grow-0 shrink-0 basis-auto w-40 ">${typescriptLogo}</div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
@@ -52,23 +52,23 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </nav>
   </header>
   <main class="mx-auto w-full flex flex-col relative">
-    <section class="lg:h-[calc(100dvh-110px)] ">
-      <div class="absolute bg-no-repeat bg-top inset-0 bg-[url('./assets/cedar-ilustration.svg')]  opacity-5 mix-blend-multiply"></div>
+    <section class="lg:h-[calc(100dvh-110px)] flex content-center justify-center">
+  
       <div
-        class="flex flex-col h-full items-center gap-8 pt-8 lg:px-80 content-center  justify-center relative  col-span-1">
-<dotlottie-wc
-  src="./src/assets/tree.json"
-  speed="1"
-  style="width: 400px; height: 400px"
-  mode="forward"
-  loop
-  autoplay
-></dotlottie-wc>
-        <div class="flex flex-col h-full items-center  gap-12">
+        class="flex flex-col items-center justify-center gap-12 lg:px-80 relative  col-span-1">
+        <dotlottie-wc
+          src="./src/assets/tree.json"
+          speed="1.5"
+          class="w-[20vh] aspect-square"
+          mode="forward"
+          loop
+          autoplay
+        ></dotlottie-wc>
+        <div class="flex flex-col items-center  gap-12">
           <h1 class="text-7xl font-header text-center text-accent-secondary font-black">
             Websites<br />
             <span class="font-header2 ">for</span>
-            <span class="text-accent-three -ml-2">real people</span>
+            <span class=" -ml-2 ">real people</span>
           </h1>
           <p class="font-subheader text-xl text-center leading-10 text-accent-secondary ">
             In a sea of generic templates, a
@@ -85,8 +85,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         </div>
       </div>
     </section>
-    <section class="flex justify-center">
-      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
+    <section class="flex justify-center bg-bg-dark text-light">
+      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-24 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent-three "></div>
           <h2 class="uppercase font-black font-callout text-accent-three text-xs " id="about">
@@ -142,7 +142,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           <div class="col-span-6">
             <div class=" px-4 pb-6 pt-4 ">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-accent-three">${bulb}</div>
+                <div class="stroke-bg-dark">${bulb}</div>
                 <h2 class="font-black font-callout text-2xl">Branding</h2>
               </div>
               <div class="grid gap-4">
@@ -156,7 +156,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </div>
             <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-accent-three">${webDesign}</div>
+                <div class="stroke-bg-dark">${webDesign}</div>
                 <h2 class="font-black font-callout text-2xl">Web design</h2>
               </div>
               <div class="grid gap-4">
@@ -173,7 +173,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </div>
             <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-accent-three">${webDev}</div>
+                <div class="stroke-bg-dark">${webDev}</div>
                 <h2 class="font-black font-callout text-2xl">
                   Web development
                 </h2>
@@ -189,7 +189,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </div>
             <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-light/15">
               <div class="flex gap-4 items-center pb-4">
-                <div class="stroke-accent-three">${support}</div>
+                <div class="stroke-bg-dark">${support}</div>
                 <h2 class="font-black font-callout text-2xl">Support</h2>
               </div>
               <div class="grid gap-4">
@@ -218,7 +218,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
     </section>
 
-    <section class="flex justify-center"">
+    <section class="flex justify-center bg-bg-dark text-light">
       <div class=" flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
       <div class="flex gap-2 items-center pb-2">
         <div class="w-15 h-0 border-1 border-accent-three "></div>
@@ -328,9 +328,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </h2>
         </div>
         <div class="grid lg:grid-cols-2 gap-8">
-          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
-              <span class="stroke-accent-three">${basicBrowser}</span>
+              <span class="stroke-bg-dark">${basicBrowser}</span>
               <h3 class="font-black font-callout text-2xl">Basic site</h3>
             </div>
             <p>
@@ -339,7 +339,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p class="font-black font-callout text-2xl text-accent-three">$1,000</p>
             <a href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get started</a>
+              class="bg-accent-three text-accent-bg px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get started</a>
             <h4 class="font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
               <li class="flex gap-4 items-center">
@@ -360,9 +360,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
             <div class="flex items-center gap-4">
-              <span class="stroke-accent-three">${advancedBrowser}</span>
+              <span class="stroke-bg-dark">${advancedBrowser}</span>
               <h3 class="font-black font-callout text-2xl">Advanced site</h3>
             </div>
             <p class="">
@@ -371,7 +371,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p class="font-black font-callout text-2xl text-accent-three">$2,500</p>
             <a href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
+              class="bg-accent-three text-accent-bg px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
               started</a>
             <h4 class=" font-black">Features</h4>
             <ul class="pl-6 relative  space-y-4">
@@ -406,14 +406,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center ">
-              <span class="stroke-accent-three">${server}</span>
+              <span class="stroke-bg-dark">${server}</span>
               <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
             </div>
             <p class="font-black font-callout text-2xl text-accent-three">$150/month</p>
               <a href="#contact"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
+              class="bg-accent-three text-accent-bg px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
               started</a>
             <h4 class=" font-black">Features</h4>
             <ul class=" relative  space-y-4 pl-6 ">
@@ -432,9 +432,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
-              <div class="stroke-accent-three">${bulb}</div>
+              <div class="stroke-bg-dark">${bulb}</div>
               <h3 class="font-black font-callout text-2xl">Custom Mini-brand</h3>
             </div>
             <p>Available as an add-on to your web design project!</p>
@@ -459,9 +459,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </li>
             </ul>
           </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-accent-three/50 flex flex-col gap-4">
+          <div class="px-4 pb-6 pt-4 border-1 border-bg-dark/70 flex flex-col gap-4">
             <div class="flex gap-4 items-center">
-              <span class="stroke-accent-three">${hourly}</span>
+              <span class="stroke-bg-dark">${hourly}</span>
               <h3 class="font-black font-callout text-2xl">Hourly rate</h3>
             </div>
             <p>
@@ -490,47 +490,47 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </section>
     <section class=" text-accent py-16 flex justify-start lg:justify-center">
       <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
-        <h2 class="text-4xl font-black font-callout text-light pb-8" id="contact">
+        <h2 class="text-4xl font-black font-callout pb-8" id="contact">
           Let's talk!
         </h2>
         <div class="flex gap-16">
-          <div class="flex-4 text-light">
+          <div class="flex-4">
             <p class="mb-5">Have an idea for a project? Reach out and we can schedule a free, no-pressure call!</p>
             <p class="mb-5">We'll go over your goals and decide if we're a good fit for your project. If we are, we'll
               sign
               the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
             <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
           </div>
-          <form action="https://formspree.io" method="POST" class="flex flex-col gap-4 text-light flex-6">
+          <form action="https://formspree.io" method="POST" class="flex flex-col gap-4 flex-6">
             <div class="form-group flex gap-4">
               <div class="flex flex-col gap-2 flex-1">
                 <label for="first-name">First name *</label>
                 <input type="text" id="first-name" name="first-name" required
-                  class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
+                  class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
               </div>
               <div class="flex flex-col gap-2  flex-1">
                 <label for="last-name">Last name *</label>
                 <input type="text" id="last-name" name="last-name" required
-                  class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
+                  class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
               </div>
             </div>
 
             <div class="flex flex-col gap-2">
               <label for="last-name">Email *</label>
               <input type="email" id="email" name="email" required
-                class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
+                class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full" />
             </div>
 
             <div class="form-group mb-2">
               <div class="flex flex-col gap-2">
                 <label for="last-name">How can I help you? *</label>
                 <textarea id="message" name="message" rows="5" required
-                  class="border border-accent-three/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"></textarea>
+                  class="border border-bg-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent-three hover:border-accent-three/85 w-full"></textarea>
               </div>
             </div>
 
             <button type="submit"
-              class="bg-accent-three text-accent px-4 py-2 text-base font-medium  hover:bg-accent-three/80 cursor-pointer">
+              class="bg-accent-three text-accent-bg px-4 py-2 text-base font-medium  hover:bg-accent-three/80 cursor-pointer">
               Send Message
             </button>
           </form>
