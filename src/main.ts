@@ -65,7 +65,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           autoplay
         ></dotlottie-wc>
         <div class="flex flex-col items-center  gap-12">
-          <h1 class="text-7xl font-header text-center text-accent-secondary font-black">
+          <h1 class="text-7xl font-header text-center  font-black">
             Websites<br />
             <span class="font-header2 ">for</span>
             <span class=" -ml-2 ">real people</span>
