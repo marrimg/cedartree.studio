@@ -13,9 +13,9 @@ import check from "./assets/check";
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
-  html`<div class="relative bg-accent-bg text-light">
+  html`<div class="relative  text-light">
   <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky">
-    <div class="bg-accent-bg absolute inset-0 opacity-97 -z-10"></div>
+    <div class=" absolute inset-0 opacity-97 -z-10"></div>
     <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch  text-light">
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
         <div class="grow-0 shrink-0 basis-auto w-40 ">${typescriptLogo}</div>
@@ -51,17 +51,24 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
     </nav>
   </header>
-  <main class="mx-auto w-full flex flex-col">
-    <section class="lg:h-[calc(100dvh-110px)] relative bg-accent-bg">
-      <div class="absolute inset-0 bg-linear-to-b from-accent-bg/80 via-30% to-accent-bg"></div>
+  <main class="mx-auto w-full flex flex-col relative">
+    <section class="lg:h-[calc(100dvh-110px)] ">
+      <div class="absolute bg-no-repeat bg-top inset-0 bg-[url('./assets/cedar-ilustration.svg')]  opacity-5 mix-blend-multiply"></div>
       <div
         class="flex flex-col h-full items-center gap-8 pt-8 lg:px-80 content-center  justify-center relative  col-span-1">
-        <img src="src/assets/tree.webp" class="w-44" />
+<dotlottie-wc
+  src="./src/assets/tree.json"
+  speed="1"
+  style="width: 400px; height: 400px"
+  mode="forward"
+  loop
+  autoplay
+></dotlottie-wc>
         <div class="flex flex-col h-full items-center  gap-12">
-          <h1 class="text-8xl font-header text-center text-accent-secondary font-black">
-            Web design<br />
+          <h1 class="text-7xl font-header text-center text-accent-secondary font-black">
+            Websites<br />
             <span class="font-header2 ">for</span>
-            <span class=" -ml-2">humans</span>
+            <span class="text-accent-three -ml-2">real people</span>
           </h1>
           <p class="font-subheader text-xl text-center leading-10 text-accent-secondary ">
             In a sea of generic templates, a
@@ -405,7 +412,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
             </div>
             <p class="font-black font-callout text-2xl text-accent-three">$150/month</p>
-                        <a href="#contact"
+              <a href="#contact"
               class="bg-accent-three text-accent px-4 py-2 text-base font-medium flex hover:bg-accent-three/80 cursor-pointer justify-center">Get
               started</a>
             <h4 class=" font-black">Features</h4>

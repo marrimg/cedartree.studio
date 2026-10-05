@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
 @import "tailwindcss";
 :root {
   --text: #6b6375;
@@ -13,6 +14,7 @@
   --color-accent-hover: #6b6375;
   --color-accent-bg: #22342c;
   --color-accent-third: #81e8b0;
+  --color-accent-fourth: #a35a29;
   --color-accent-secondary: #eceae0;
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -42,6 +44,37 @@
 
 a {
   cursor: pointer;
+}
+
+body {
+  /* background:
+    radial-gradient(
+      100% 100% at var(--20-x-position, 87.3047%) var(--20-y-position, 96.875%),
+      #027443 -57%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--21-x-position, 15.7031%) var(--21-y-position, 53.4375%),
+      #22342c 47%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--22-x-position, 43.4766%) var(--22-y-position, 10.8594%),
+      #0f8a5b -91%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--23-x-position, 51.875%) var(--23-y-position, 50.2734%),
+      #22342c 21%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--24-x-position, 88.2031%) var(--24-y-position, 48.3594%),
+      #032d28 49%,
+      transparent
+    ), */
+  /* #027443; */
+  background: #22342c;
 }
 
 @font-face {
@@ -83,13 +116,6 @@ a {
 @font-face {
   font-family: "Trykker";
   src: url("./assets/Trykker-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Yesteryear";
-  src: url("./assets/Yesteryear-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
