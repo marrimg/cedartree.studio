@@ -14,8 +14,21 @@ const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
   html`<div class="relative  bg-light text-dark">
+  <div id="mobile-menu"
+        class="hidden lg:hidden absolute inset-0 items-center text-xl justify-center flex-1 z-60  py-8 w-full h-full bg-light">
+        <div id="close-btn" class="absolute top-8 right-8 text-2xl cursor-pointer">
+          ✕
+        </div>
+        <div class="flex flex-col items-center justify-center gap-16 pt-16 bg-light">
+          <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
+          <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
+          <a href="#process" class="menu-item  hover:text-accent-hover">Our Process</a>
+          <a href="#pricing" class="menu-item  hover:text-accent-hover">Pricing</a>
+          <a class="menu-item hover:text-accent-hover" href="#contact">Get in touch</a>
+        </div>
+      </div>
   <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky bg-light">
-    <div class=" absolute inset-0 opacity-97 -z-10"></div>
+      
     <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch ">
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
         <div class="grow-0 shrink-0 basis-auto w-40 ">${typescriptLogo}</div>
@@ -36,23 +49,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </button>
         </div>
       </div>
-      <div id="mobile-menu"
-        class="hidden lg:hidden absolute top-0 bottom-0 left-0 right-0 items-center text-xl justify-center flex-1 z-30  py-8 w-full">
-        <div id="close-btn" class="absolute top-8 right-8 text-2xl cursor-pointer">
-          ✕
-        </div>
-        <div class="flex flex-col items-center justify-center gap-16 pt-16">
-          <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
-          <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
-          <a href="#process" class="menu-item  hover:text-accent-hover">Our Process</a>
-          <a href="#pricing" class="menu-item  hover:text-accent-hover">Pricing</a>
-          <a class="menu-item hover:text-accent-hover" href="#contact">Get in touch</a>
-        </div>
-      </div>
+
     </nav>
   </header>
   <main class="mx-auto w-full flex flex-col relative">
-    <section class="lg:h-[calc(100dvh-110px)] flex content-center justify-center">
+    <section class="h-[calc(100dvh-110px)] flex content-center justify-center px-8">
   
       <div
         class="flex flex-col items-center justify-center gap-12 lg:px-80 relative  col-span-1">
@@ -65,7 +66,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           autoplay
         ></dotlottie-wc>
         <div class="flex flex-col items-center  gap-12">
-          <h1 class="text-8xl font-header text-center  font-black">
+          <h1 class="text-7xl lg:text-8xl font-header text-center  font-black">
             Websites<br />
             <span class="font-header2 ">for</span>
             <span class=" -ml-2 ">real people</span>
@@ -79,7 +80,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </p>
           <div class="flex items-center justify-center">
             <a href="#contact"
-              class="bg-accent px-8 py-4 text-light font-medium hover:accent/80 rounded-full hover:text-light">Get
+              class="bg-accent px-8 py-4 text-light font-medium hover:accent/80 rounded-full hover:bg-accent/90">Get
               in touch</a>
           </div>
         </div>
@@ -94,8 +95,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </h2>
         </div>
 
-        <ul class="grid grid-cols-3">
-          <li class="p-8 flex flex-col gap-4 border-r border-light/15">
+        <ul class="grid lg:grid-cols-3">
+          <li class="p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
             <h2 class="font-black font-callout text-2xl" id="about">
               Who I am
             </h2>
@@ -106,7 +107,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               goals.
             </p>
           </li>
-          <li class="p-8 flex flex-col gap-4 border-r border-light/15">
+          <li class="p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
             <h2 class="font-black font-callout text-2xl">What I do</h2>
             <p>
               I cover the full path from designing your website to deploying it and ensuring its
@@ -114,7 +115,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               you need!
             </p>
           </li>
-          <li class=" p-8 flex flex-col gap-4">
+          <li class=" p-8 flex flex-col gap-4 ">
             <h2 class="font-black font-callout text-2xl">
               Who I work with best
             </h2>
@@ -129,7 +130,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </section>
 
     <section class="flex justify-center">
-      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
+      <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent "></div>
           <h2 class="uppercase font-black font-callout text-accent text-xs " id="about">
@@ -137,7 +138,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </h2>
         </div>
         <div class="grid grid-cols-12 gap-8">
-          <div class="col-span-6">
+          <div class="col-span-12 lg:col-span-6">
 
             <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 ">
               <div class="flex gap-4 items-center pb-4">
@@ -146,7 +147,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="grid gap-4">
                 <p>
- I build websites that make it easier for people to understand what you do and say "yes." My approach is calm, practical, and focused on how real people read and decide online.We'll
+                  I build websites that make it easier for people to understand what you do and say "yes." My approach is calm, practical, and focused on how real people read and decide online. We'll
                   walk through what you want to accomplish with your site and
                   create a design that helps guide your customers to that goal.
                 </p>
@@ -200,7 +201,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
             </div>
           </div>
-          <div class="col-span-6 p-4 flex flex-col gap-4">
+          <div class="col-span-12 lg:col-span-6 p-4 flex flex-col gap-4 order-first lg:order-last">
             <div class="flex-0 h-0 border-1 border-accent"></div>
             <img src="https://assets.marrigamard.com/antimatter-style-guide.webp" class="w-full border-accent border" />
             <div class="flex-0 h-0 border-1 border-accent"></div>
@@ -215,7 +216,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </section>
 
     <section class="flex justify-center bg-dark text-light">
-      <div class=" flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
+      <div class=" flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
       <div class="flex gap-2 items-center pb-2">
         <div class="w-15 h-0 border-1 border-accent "></div>
         <h2 class="uppercase font-black font-callout text-accent text-xs " id="about">
@@ -316,7 +317,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </section>
 
     <section class="flex justify-center">
-      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
+      <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-16">
           <div class="w-15 h-0 border-1 border-accent "></div>
           <h2 class="uppercase font-black font-callout text-accent text-xs " id="pricing">
@@ -485,19 +486,19 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
     </section>
     <section class=" py-16 flex justify-start lg:justify-center">
-      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-8 max-w-[1200px]">
+      <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
         <h2 class="text-4xl font-black font-callout pb-8" id="contact">
           Let's talk!
         </h2>
-        <div class="flex gap-16">
-          <div class="flex-4">
+        <div class="flex gap-16 flex-wrap">
+          <div class="lg:flex-4">
             <p class="mb-5">Have an idea for a project? Reach out and we can schedule a free, no-pressure call!</p>
             <p class="mb-5">We'll go over your goals and decide if we're a good fit for your project. If we are, we'll
               sign
               the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
             <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
           </div>
-          <form action="https://formspree.io" method="POST" class="flex flex-col gap-4 flex-6">
+          <form action="https://formspree.io" method="POST" class="flex flex-col gap-4 lg:flex-6">
             <div class="form-group flex gap-4">
               <div class="flex flex-col gap-2 flex-1">
                 <label for="first-name">First name *</label>
