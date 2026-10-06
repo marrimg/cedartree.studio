@@ -101,7 +101,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               Who I am
             </h2>
             <p>
-              I'm a web developer and designer with over 14 years of experience.
+              I'm a Portland, OR web designer and developer with over 14 years of experience.
               I believe that good design comes from good communication, a strong
               sense of empathy, creative problem-solving, and well-defined
               goals.
@@ -147,9 +147,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="grid gap-4">
                 <p>
-                  I build websites that make it easier for people to understand what you do and say "yes." My approach is calm, practical, and focused on how real people read and decide online. We'll
-                  walk through what you want to accomplish with your site and
-                  create a design that helps guide your customers to that goal.
+                  I build websites that help people understand what you do, and make it easy to say 'yes' to your offerings! We'll
+                  walk through what you want to accomplish with your site, and
+                  create a design that helps guide people to that goal.
                 </p>
                 <a href="#contact" class="text-accent">Get started with your website →</a>
               </div>
@@ -163,9 +163,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="grid gap-4">
                 <p>
-                  We will work together to figure out your needs, and we will
-                  choose the platform that is right for you. I currently work
-                  with Wordpress and Squarespace.
+                  We will work together to figure out your technical needs, and choose the platform that is right for you.
                 </p>
                 <a href="#contact" class="text-accent">Get started with your website →</a>
               </div>
@@ -178,7 +176,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               <div class="grid gap-4">
                 <p>
                   Are you starting a new business and don't have an established
-                  brand? Does your current brand feel outdated or unfocused? Add
+                  brand? Does your current brand feel outdated or scattered? Add
                   a mini-brand package to your web project and let me help!
                 </p>
                 <a href="#contact" class="text-accent">Get started →</a>
@@ -191,7 +189,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="grid gap-4">
                 <p>
-                  I can take care the hosting for Wordpress projects so you
+                  I can take care the hosting so you
                   don't have to! I'll handle all your security updates, plugin
                   updates, and backups. Or, if you want to host your site
                   elsewhere, you can book me for a call to answer any of your
@@ -301,14 +299,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               All clients get two weeks of free email support after launch.
             </p>
             <p>
-              If you purchase Wordpress hosting through me, we'll start a new
+              If you purchase hosting through me, we'll start a new
               contract for a monthly subscription. This service includes
               hosting, software updates, email support, and two free support
               calls a month.
             </p>
             <p>
-              If you self-host your Wordpress site or host on Squarespace, you
-              can always book me for an hour-long support call!
+              If you self-host your site, you can always book me for an hour-long support call!
             </p>
           </div>
         </li>
@@ -493,7 +490,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         <div class="flex gap-16 flex-wrap">
           <div class="lg:flex-4">
             <p class="mb-5">Have an idea for a project? Reach out and we can schedule a free, no-pressure call!</p>
-            <p class="mb-5">We'll go over your goals and decide if we're a good fit for your project. If we are, we'll
+            <p class="mb-5">We'll go over your goals and decide if I'm a good fit for your project. If so, we'll
               sign
               the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
             <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
