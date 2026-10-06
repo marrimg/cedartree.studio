@@ -29,7 +29,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       
     <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch ">
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
-        <div class="grow-0 shrink-0 basis-auto w-40 ">${typescriptLogo}</div>
+        <div class="grow-0 shrink-0 basis-auto w-40 cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">${typescriptLogo}</div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
           <div class="flex items-center justify-center gap-16 flex-1">
             <a href="#about" class="menu-item hover:text-accent-hover">About</a>
@@ -87,7 +87,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
 
         <ul class="grid lg:grid-cols-3">
           <li class="p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
-            <h2 class="font-black font-callout text-2xl" id="about">
+            <h2 class="font-black font-callout text-2xl">
               Who I am
             </h2>
             <p>
@@ -123,7 +123,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent "></div>
-          <h2 class="uppercase font-black font-callout text-accent text-xs " id="about">
+          <h2 class="uppercase font-black font-callout text-accent text-xs " id="services">
             Services
           </h2>
         </div>
@@ -193,7 +193,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             <div class="flex-0 h-0 border-1 border-accent"></div>
             <img src="https://assets.marrigamard.com/antimatter-style-guide.webp" class="w-full border-accent border" />
             <div class="flex-0 h-0 border-1 border-accent"></div>
-            <h2 class="uppercase  font-black font-callout text-accent text-xs" id="about">
+            <h2 class="uppercase  font-black font-callout text-accent text-xs" >
               Custom brand guides
             </h2>
             <div class="flex gap-2 items-center pb-2 pt-4 justify-between">
@@ -207,7 +207,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       <div class=" flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
       <div class="flex gap-2 items-center pb-2">
         <div class="w-15 h-0 border-1 border-accent "></div>
-        <h2 class="uppercase font-black font-callout text-accent text-xs " id="about">
+        <h2 class="uppercase font-black font-callout text-accent text-xs " id="process">
           Process
         </h2>
       </div>
@@ -320,7 +320,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             <div class="form-group flex gap-4">
               <div class="flex flex-col gap-2 flex-1">
                 <label for="first-name">First name *</label>
-                <input type="text" id="first-name" name="first-name" required
+                <input maxLength="30" type="text" id="first-name" name="first-name" required
                   class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
               </div>
               <div class="flex flex-col gap-2  flex-1">
@@ -332,14 +332,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
 
             <div class="flex flex-col gap-2">
               <label for="last-name">Email *</label>
-              <input type="email" id="email" name="email" required
+              <input type="email" maxLength="50" id="email" name="email" required
                 class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
             </div>
 
             <div class="form-group mb-2">
               <div class="flex flex-col gap-2">
                 <label for="last-name">How can I help you? *</label>
-                <textarea id="message" name="message" rows="5" required
+                <textarea id="message" name="message" rows="5" minLength="10" maxLength="400" required
                   class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full"></textarea>
               </div>
             </div>
