@@ -317,6 +317,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           </div>
           <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4 lg:flex-6">
           <input type="hidden" name="access_key" value="5be9706e-e6ef-420b-9fd5-41e1124cdc67">
+          <input type="checkbox" name="botcheck" id="" class="hidden" style="display: none;" />
             <div class="form-group flex gap-4">
               <div class="flex flex-col gap-2 flex-1">
                 <label for="first-name">First name *</label>
