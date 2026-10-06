@@ -4,12 +4,7 @@ import bulb from "./assets/bulb";
 import webDesign from "./assets/web-design";
 import support from "./assets/support";
 import webDev from "./assets/web-dev";
-import basicBrowser from "./assets/basic-browser";
-import advancedBrowser from "./assets/advanced-browser";
-import server from "./assets/server";
-import hourly from "./assets/hourly";
-import check from "./assets/check";
-// import consultation from "./assets/consultation";
+
 const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
