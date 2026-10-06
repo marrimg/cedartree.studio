@@ -1,4 +1,3 @@
-import "./style.css";
 import lottie from "lottie-web";
 import typescriptLogo from "./assets/cts-logo";
 import bulb from "./assets/bulb";
