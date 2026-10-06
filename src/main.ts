@@ -315,7 +315,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               the paperwork, you'll pay a 1/3 deposit, and I'll get you on my calendar!</p>
             <p>If not, I'll try to point you in the direction of someone who might be a better fit.</p>
           </div>
-          <form action="https://formspree.io" method="POST" class="flex flex-col gap-4 lg:flex-6">
+          <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4 lg:flex-6">
+          <input type="hidden" name="access_key" value="5be9706e-e6ef-420b-9fd5-41e1124cdc67">
             <div class="form-group flex gap-4">
               <div class="flex flex-col gap-2 flex-1">
                 <label for="first-name">First name *</label>
