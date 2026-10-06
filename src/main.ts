@@ -325,7 +325,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="flex flex-col gap-2  flex-1">
                 <label for="last-name">Last name *</label>
-                <input type="text" id="last-name" name="last-name" required
+                <input type="text" id="last-name" maxLength="30" name="last-name" required
                   class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
               </div>
             </div>
