@@ -1,11 +1,15 @@
 import "./style.css";
+import lottie from "lottie-web";
 import typescriptLogo from "./assets/cts-logo";
 import bulb from "./assets/bulb";
 import webDesign from "./assets/web-design";
 import support from "./assets/support";
 import webDev from "./assets/web-dev";
+import treeAnimation from "./assets/tree.json";
 
 const html = String.raw;
+
+// const tree = JSON.stringify(treeAnimation);
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
   html`<div class="relative  bg-light text-dark">
@@ -50,14 +54,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
   
       <div
         class="flex flex-col items-center justify-center gap-12 lg:px-80 relative  col-span-1">
-        <dotlottie-wc
-          src="./src/assets/tree.json"
-          speed="1.5"
-          class="w-[16vh] aspect-square"
-          mode="forward"
-          loop
-          autoplay
-        ></dotlottie-wc>
+        <div id="tree-animation-container" class="w-[20vh] aspect-square"></div>
         <div class="flex flex-col items-center  gap-12">
           <h1 class="text-7xl lg:text-8xl font-header text-center  font-black">
             Websites<br />
@@ -367,6 +364,17 @@ const menuBtn = document.getElementById("menu-btn");
 const menuItems = document.querySelectorAll(".menu-item");
 const mobileMenu = document.getElementById("mobile-menu");
 
+const container = document.getElementById("tree-animation-container");
+console.log(treeAnimation, container, "treeAnimation");
+if (container) {
+  lottie.loadAnimation({
+    container: container, // The DOM element to render the animation in
+    renderer: "svg", // 'svg', 'canvas', or 'html'
+    loop: true,
+    autoplay: true,
+    animationData: treeAnimation, // Your BodyMovin JSON data
+  });
+}
 menuBtn?.addEventListener("click", () => {
   mobileMenu?.classList.toggle("hidden");
 });
