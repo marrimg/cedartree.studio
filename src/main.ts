@@ -137,7 +137,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="grid gap-4">
                 <p>
-                  I build websites that help people understand what you do, and make it easy to say 'yes' to your offerings! We'll
+                  I build websites that help people understand what you do, and make it easy for themto say 'yes' to your offerings! We'll
                   walk through what you want to accomplish with your site, and
                   create a design that helps guide people to that goal.
                 </p>
