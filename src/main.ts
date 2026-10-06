@@ -23,7 +23,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
           <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
           <a href="#process" class="menu-item  hover:text-accent-hover">Our Process</a>
-          <a href="#pricing" class="menu-item  hover:text-accent-hover">Pricing</a>
           <a class="menu-item hover:text-accent-hover" href="#contact">Get in touch</a>
         </div>
       </div>
@@ -37,7 +36,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             <a href="#about" class="menu-item hover:text-accent-hover">About</a>
             <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
             <a href="#process" class="menu-item hover:text-accent-hover">Our Process</a>
-            <a href="#pricing" class="menu-item hover:text-accent-hover">Pricing</a>
           </div>
           <div class="grow-0 shrink-0 basis-auto hover:text-accent-hover px-12">
             <a href="#contact">Get in touch</a>
@@ -101,7 +99,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               Who I am
             </h2>
             <p>
-              I'm a Portland, OR web designer and developer with over 14 years of experience.
+              I'm a Portland-based web developer with over 14 years of experience.
               I believe that good design comes from good communication, a strong
               sense of empathy, creative problem-solving, and well-defined
               goals.
@@ -311,176 +309,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         </li>
       </ol>
 
-    </section>
-
-    <section class="flex justify-center">
-      <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
-        <div class="flex gap-2 items-center pb-16">
-          <div class="w-15 h-0 border-1 border-accent "></div>
-          <h2 class="uppercase font-black font-callout text-accent text-xs " id="pricing">
-            Pricing
-          </h2>
-        </div>
-        <div class="grid lg:grid-cols-2 gap-8">
-          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
-            <div class="flex gap-4 items-center">
-              <span class="stroke-dark">${basicBrowser}</span>
-              <h3 class="font-black font-callout text-2xl">Basic site</h3>
-            </div>
-            <p>
-              A blazing-fast, SEO optimized static website. Perfect for a small
-              business on a budget.
-            </p>
-            <p class="font-black font-callout text-2xl text-accent">$1,000</p>
-            <a href="#contact"
-              class="bg-accent text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get started</a>
-            <h4 class="font-black">Features</h4>
-            <ul class="pl-6 relative  space-y-4">
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>
-                Up to 5 pages. For example: home, about us, products, contact.
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Responsive design
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Tested for accessibility
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Two rounds of revisions
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Simple contact form
-              </li>
-            </ul>
-          </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
-            <div class="flex items-center gap-4">
-              <span class="stroke-dark">${advancedBrowser}</span>
-              <h3 class="font-black font-callout text-2xl">Advanced site</h3>
-            </div>
-            <p class="">
-              Increase sales, appointments, or donations with my advanced site
-              package.
-            </p>
-            <p class="font-black font-callout text-2xl text-accent">$2,500</p>
-            <a href="#contact"
-              class="bg-accent text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get
-              started</a>
-            <h4 class=" font-black">Features</h4>
-            <ul class="pl-6 relative  space-y-4">
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Up to 7 pages
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Responsive design
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Tested for accessibility
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Two rounds of revisions
-              </li>
-              <li class="flex gap-4 items-center"><span>${check}</span>Blog</li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Advanced forms
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Sell products
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Take donations
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Calendar
-              </li>
-              <li class="flex gap-4 items-center"><span>${check}</span>Map</li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Schedule appointments
-              </li>
-            </ul>
-          </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
-            <div class="flex gap-4 items-center ">
-              <span class="stroke-dark">${server}</span>
-              <h3 class="font-black font-callout text-2xl">Site Hosting</h3>
-            </div>
-            <p class="font-black font-callout text-2xl text-accent">$150/month</p>
-              <a href="#contact"
-              class="bg-accent text-light px-4 py-2 text-base font-medium flex hover:bg-accent/80 cursor-pointer justify-center">Get
-              started</a>
-            <h4 class=" font-black">Features</h4>
-            <ul class=" relative  space-y-4 pl-6 ">
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Hosting
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Advanced SEO
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Free email support
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>
-                Two free support calls per month
-              </li>
-            </ul>
-          </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
-            <div class="flex gap-4 items-center">
-              <div class="stroke-dark">${bulb}</div>
-              <h3 class="font-black font-callout text-2xl">Custom Mini-brand</h3>
-            </div>
-            <p>Available as an add-on to your web design project!</p>
-            <p class="font-black font-callout text-2xl text-accent">$500</p>
-            <h4 class=" font-black">Features</h4>
-            <ul class="relative  space-y-4 pl-6 ">
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>
-                Wordmark logo with SVG files that can be used in print or
-                digital formats.
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Custom typeface choices
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Custom color palette
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>
-                Mini style guide that displays all of these elements in an
-                easy-to-reference format.
-              </li>
-            </ul>
-          </div>
-          <div class="px-4 pb-6 pt-4 border-1 border-dark/70 flex flex-col gap-4">
-            <div class="flex gap-4 items-center">
-              <span class="stroke-dark">${hourly}</span>
-              <h3 class="font-black font-callout text-2xl">Hourly rate</h3>
-            </div>
-            <p>
-              If you've worked with me on a project and you don't have a hosting
-              plan, we can schedule a call!
-            </p>
-            <p class="font-black font-callout text-2xl text-accent">$100/hr</p>
-            <h4 class=" font-black">We can talk about:</h4>
-            <ul class="pl-6 relative  space-y-4">
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Style updates
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Technical questions
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Small tweaks
-              </li>
-              <li class="flex gap-4 items-center">
-                <span>${check}</span>Upgrade to hosting plan
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
     <section class=" py-16 flex justify-start lg:justify-center">
       <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
