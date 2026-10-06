@@ -365,7 +365,6 @@ const menuItems = document.querySelectorAll(".menu-item");
 const mobileMenu = document.getElementById("mobile-menu");
 
 const container = document.getElementById("tree-animation-container");
-console.log(treeAnimation, container, "treeAnimation");
 if (container) {
   lottie.loadAnimation({
     container: container, // The DOM element to render the animation in
@@ -374,6 +373,7 @@ if (container) {
     autoplay: true,
     animationData: treeAnimation, // Your BodyMovin JSON data
   });
+  lottie.setSpeed(2);
 }
 menuBtn?.addEventListener("click", () => {
   mobileMenu?.classList.toggle("hidden");
