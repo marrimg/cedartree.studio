@@ -12,8 +12,10 @@ const html = String.raw;
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML =
   html`<div class="relative  bg-light text-dark">
-  <div id="mobile-menu"
-        class="hidden lg:hidden absolute inset-0 items-center text-xl justify-center flex-1 z-60  py-8 w-full h-full bg-light">
+  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky bg-light">
+    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch relative">
+      <div id="mobile-menu"
+        class="hidden h-[100vh] lg:hidden absolute inset-0 items-center text-xl justify-center flex-1 z-60  py-8 w-full bg-light">
         <div id="close-btn" class="absolute top-8 right-8 text-2xl cursor-pointer">
           ✕
         </div>
@@ -24,9 +26,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           <a class="menu-item hover:text-accent-hover" href="#contact">Get in touch</a>
         </div>
       </div>
-  <header class="font-medium h-[75px] top-0 left-0 right-0 z-50 sticky bg-light">
-      
-    <nav class="grow shrink-0 basis-auto flex flex-col justify-self-stretch ">
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
         <div class="grow-0 shrink-0 basis-auto w-40 cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">${typescriptLogo}</div>
         <div class="hidden lg:flex items-center justify-between gap-16 w-full">
@@ -54,8 +53,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       <div
         class="flex flex-col items-center justify-center gap-12 lg:px-80 relative  col-span-1">
         <div id="tree-animation-container" class="w-[20vh] aspect-square"></div>
-        <div class="flex flex-col items-center  gap-12">
-          <h1 class="text-7xl lg:text-8xl font-header text-center  font-black">
+        <div class="flex flex-col items-center gap-4 lg:gap-12">
+          <h1 class="text-5xl lg:text-8xl font-header text-center  font-black">
             Websites<br />
             <span class="font-header2 ">for</span>
             <span class=" -ml-2 ">real people</span>
@@ -76,7 +75,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
     </section>
     <section class="flex justify-center bg-dark text-light">
-      <div class="flex flex-col gap-8 flex-1 px-16 pt-16 pb-24 max-w-[1200px]">
+      <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-24 max-w-[1200px]">
         <div class="flex gap-2 items-center pb-2">
           <div class="w-15 h-0 border-1 border-accent "></div>
           <h2 class="uppercase font-black font-callout text-accent text-xs " id="about">
@@ -85,7 +84,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         </div>
 
         <ul class="grid lg:grid-cols-3">
-          <li class="p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
+          <li class="pb-8 lg:p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
             <h2 class="font-black font-callout text-2xl">
               Who I am
             </h2>
@@ -96,7 +95,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               goals.
             </p>
           </li>
-          <li class="p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
+          <li class="py-8 lg:p-8 flex flex-col gap-4 border-b lg:border-b-0 lg:border-r border-light/15">
             <h2 class="font-black font-callout text-2xl">What I do</h2>
             <p>
               I cover the full path from designing your website to deploying it and ensuring its
@@ -104,7 +103,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               you need!
             </p>
           </li>
-          <li class=" p-8 flex flex-col gap-4 ">
+          <li class="pt-8 lg:p-8 flex flex-col gap-4 ">
             <h2 class="font-black font-callout text-2xl">
               Who I work with best
             </h2>
