@@ -177,7 +177,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
               <div class="grid gap-4">
                 <p>
-                  I can take care the hosting so you
+                  I can take care of the hosting so you
                   don't have to! I'll handle all your security updates, plugin
                   updates, and backups. Or, if you want to host your site
                   elsewhere, you can book me for a call to answer any of your
@@ -209,7 +209,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
 
       <ol class="grid  lg:grid-cols-3 gap-4">
-        <li class="flex flex-col gap-4 p-8 align-center border border-light/15 flex-wrap lg:flex-nowrap rounded-4xl">
+        <li class="flex flex-col gap-4 p-8 align-center border border-light/15 flex-wrap lg:flex-nowrap rounded-4xl ">
           <span class="text-accent">01</span>
           <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Discovery</h3>
