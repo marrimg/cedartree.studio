@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
 @import "tailwindcss";
 :root {
-  --color-dark: #204130;
+  --color-dark: #21372f;
   --color-light: #fcf9f5;
-  --color-accent: #c58a53;
+  --color-accent: #c17834;
   --color-accent-hover: #6b6375;
   --color-accent-secondary: #364732;
 
