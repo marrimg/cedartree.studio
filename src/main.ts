@@ -209,7 +209,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
 
       <ol class="grid  lg:grid-cols-3 gap-4">
-        <li class="flex flex-col gap-4 py-8 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap rounded-4xl">
+        <li class="flex flex-col gap-4 py-8 align-center lg:items-center border border-light/15 flex-wrap lg:flex-nowrap rounded-4xl">
           <span class="text-accent">01</span>
           <div class="flex flex-col gap-4 px-8">
             <h3 class="font-black font-callout text-2xl">Discovery</h3>
@@ -222,7 +222,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8  rounded-4xl">
+        <li class="flex flex-col gap-4 align-center lg:items-center border border-light/15 flex-wrap lg:flex-nowrap p-8  rounded-4xl">
           <span class="text-accent">02</span>
           <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Strategy</h3>
@@ -237,7 +237,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 flex-col  rounded-4xl">
+        <li class="flex gap-4 align-center lg:items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 flex-col  rounded-4xl">
           <span class="text-accent">03</span>
           <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Preparation</h3>
@@ -251,7 +251,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 rounded-4xl">
+        <li class="flex flex-col gap-4 align-center lg:items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 rounded-4xl">
           <span class="text-accent">04</span>
           <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Development</h3>
@@ -265,7 +265,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 rounded-4xl">
+        <li class="flex flex-col gap-4 align-center lg:items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 rounded-4xl">
           <span class="text-accent">05</span>
           <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Launch</h3>
@@ -275,7 +275,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8  rounded-4xl">
+        <li class="flex flex-col gap-4 align-center lg:items-center border border-light/15 flex-wrap lg:flex-nowrap p-8  rounded-4xl">
           <span class="text-accent">06</span>
           <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Support</h3>
