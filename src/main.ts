@@ -48,7 +48,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </nav>
   </header>
   <main class="mx-auto w-full flex flex-col relative">
-    <section class=" pb-16 lg:pb-20 pt-8 lg:pt-16 px-8 lg:px-0 flex content-center justify-center">
+    <section class=" pb-16 lg:pb-20 lg:pt-16 px-8 lg:px-0 flex content-center justify-center">
   
       <div
         class="flex flex-col items-center justify-center gap-12 lg:px-80 relative  col-span-1">
