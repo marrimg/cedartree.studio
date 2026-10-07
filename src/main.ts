@@ -284,9 +284,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
             <p>
               If you purchase hosting through me, we'll start a new
-              contract for a monthly subscription. This service includes
-              hosting, software updates, email support, and two free support
-              calls a month.
+              contract for a monthly subscription.
             </p>
             <p>
               If you self-host your site, you can always book me for an hour-long support call!
