@@ -2,7 +2,7 @@
 @import "tailwindcss";
 :root {
   --color-dark: #204130;
-  --color-light: #f9f7e8;
+  --color-light: #fcf9f5;
   --color-accent: #c58a53;
   --color-accent-hover: #6b6375;
   --color-accent-secondary: #364732;
