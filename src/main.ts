@@ -200,7 +200,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </section>
 
     <section class="flex justify-center bg-dark text-light">
-      <div class=" flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
+      <div class=" flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-16 max-w-[1200px]">
       <div class="flex gap-2 items-center pb-2">
         <div class="w-15 h-0 border-1 border-accent "></div>
         <h2 class="uppercase font-black font-callout text-accent text-xs " id="process">
@@ -208,10 +208,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         </h2>
       </div>
 
-      <ol class="grid  grid-cols-1">
-        <li class="flex gap-8 align-center items-center pb-8 border-light/15 flex-wrap lg:flex-nowrap">
+      <ol class="grid  lg:grid-cols-3 gap-4">
+        <li class="flex flex-col gap-4 py-8 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap rounded-4xl">
           <span class="text-accent">01</span>
-          <div class="flex flex-col gap-4 lg:p-8">
+          <div class="flex flex-col gap-4 px-8">
             <h3 class="font-black font-callout text-2xl">Discovery</h3>
             <p>
               If you have a project in mind,
@@ -222,13 +222,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
+        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8  rounded-4xl">
           <span class="text-accent">02</span>
-          <div class="flex flex-col gap-4 lg:p-8">
+          <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Strategy</h3>
             <p>
               After booking, we'll get on a call and really dive into what you
-              want to accomplish with your website. We'll choose a primary and
+              want to accomplish with your website.</p> <p>We'll choose a primary and
               secondary goal and talk through how to design the website to
               accomplish those goals. We'll map out your website's pages and
               discuss branding, content and images. We'll discuss which
@@ -237,39 +237,37 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
+        <li class="flex gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 flex-col  rounded-4xl">
           <span class="text-accent">03</span>
-          <div class="flex flex-col gap-4 lg:p-8">
+          <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Preparation</h3>
             <p>
               After getting our plan in place, we'll kick off some time for
-              preparation. This will give us time to work on anything that
-              needs to be done before development starts. If you're supplying
-              the copy, photos, and other brand assets for your website, this
+              preparation.</p><p> If you're supplying the copy, photos, and other brand assets for your website, this
               will give you time to send me these things. If you added on a
               mini-brand package, I will spend this time working on your
-              brand. Towards the end of the prep period, we'll schedule some
+              brand. </p><p>Towards the end of the prep period, we'll schedule some
               time for feedback (if needed) before development starts.
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
+        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 rounded-4xl">
           <span class="text-accent">04</span>
-          <div class="flex flex-col gap-4 lg:p-8">
+          <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Development</h3>
             <p>
               Once all the branding and assets are good to go, I'll start
               developing your website. If you're not supplying brand assets
               and choose not to go forward with the mini brand package, I will
-              use my default tasteful font selection and color pallette. We'll
+              use my default tasteful font selection and color pallette.</p><p> We'll
               check in at the halfway point and near the end of this period
               for questions, feedback, and revisions.
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
+        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8 rounded-4xl">
           <span class="text-accent">05</span>
-          <div class="flex flex-col gap-4 lg:p-8">
+          <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Launch</h3>
             <p>
               I wrap up any final tweaks, you'll make your final payment, and
@@ -277,9 +275,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
+        <li class="flex flex-col gap-4 align-center items-center border border-light/15 flex-wrap lg:flex-nowrap p-8  rounded-4xl">
           <span class="text-accent">06</span>
-          <div class="flex flex-col gap-4  lg:p-8">
+          <div class="flex flex-col gap-4">
             <h3 class="font-black font-callout text-2xl">Support</h3>
             <p>
               All clients get two weeks of free email support after launch.
