@@ -48,13 +48,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
     </nav>
   </header>
   <main class="mx-auto w-full flex flex-col relative">
-    <section class="h-[calc(100dvh-110px)] flex content-center justify-center px-8">
+    <section class=" pb-16 lg:pb-20 pt-8 lg:pt-16 px-8 lg:px-0 flex content-center justify-center">
   
       <div
         class="flex flex-col items-center justify-center gap-12 lg:px-80 relative  col-span-1">
         <div id="tree-animation-container" class="w-[20vh] aspect-square"></div>
         <div class="flex flex-col items-center gap-4 lg:gap-12">
-          <h1 class="text-5xl lg:text-8xl font-header text-center  font-black">
+          <h1 class="text-5xl lg:text-6xl xl:text-8xl font-header text-center  font-black">
             Websites<br />
             <span class="font-header2 ">for</span>
             <span class=" -ml-2 ">real people</span>
@@ -128,7 +128,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
         <div class="grid grid-cols-12 gap-8">
           <div class="col-span-12 lg:col-span-6">
 
-            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 ">
+            <div class="col-span-12 lg:col-span-6  pb-6 pt-4 ">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-dark">${webDesign}</div>
                 <h2 class="font-black font-callout text-2xl">Web design</h2>
@@ -142,7 +142,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
                 <a href="#contact" class="text-accent">Get started with your website →</a>
               </div>
             </div>
-            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-dark/15">
+            <div class="col-span-12 lg:col-span-6 pb-6 pt-4 border-t border-dark/15">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-dark">${webDev}</div>
                 <h2 class="font-black font-callout text-2xl">
@@ -156,7 +156,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
                 <a href="#contact" class="text-accent">Get started with your website →</a>
               </div>
             </div>
-              <div class=" px-4 pb-6 pt-4 border-t border-dark/15">
+              <div class=" pb-6 pt-4 border-t border-dark/15">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-dark">${bulb}</div>
                 <h2 class="font-black font-callout text-2xl">Branding</h2>
@@ -170,7 +170,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
                 <a href="#contact" class="text-accent">Get started →</a>
               </div>
             </div>
-            <div class="col-span-12 lg:col-span-6 px-4 pb-6 pt-4 border-t border-dark/15">
+            <div class="col-span-12 lg:col-span-6  pb-6 pt-4 border-t border-dark/15">
               <div class="flex gap-4 items-center pb-4">
                 <div class="stroke-dark">${support}</div>
                 <h2 class="font-black font-callout text-2xl">Support</h2>
@@ -187,15 +187,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
               </div>
             </div>
           </div>
-          <div class="col-span-12 lg:col-span-6 p-4 flex flex-col gap-4 order-first lg:order-last">
+          <div class="col-span-12 lg:col-span-6 lg:p-4 flex flex-col gap-4 order-first lg:order-last">
             <div class="flex-0 h-0 border-1 border-accent"></div>
             <img src="https://assets.marrigamard.com/antimatter-style-guide.webp" class="w-full border-accent border" />
             <div class="flex-0 h-0 border-1 border-accent"></div>
             <h2 class="uppercase  font-black font-callout text-accent text-xs" >
               Custom brand guides
             </h2>
-            <div class="flex gap-2 items-center pb-2 pt-4 justify-between">
-            </div>
           </div>
         </div>
       </div>
@@ -211,9 +209,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </div>
 
       <ol class="grid  grid-cols-1">
-        <li class="flex gap-8 align-center items-center border-light/15">
+        <li class="flex gap-8 align-center items-center pb-8 border-light/15 flex-wrap lg:flex-nowrap">
           <span class="text-accent">01</span>
-          <div class="flex flex-col gap-4 p-8">
+          <div class="flex flex-col gap-4 lg:p-8">
             <h3 class="font-black font-callout text-2xl">Discovery</h3>
             <p>
               If you have a project in mind,
@@ -224,9 +222,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
           <span class="text-accent">02</span>
-          <div class="flex flex-col gap-4  p-8">
+          <div class="flex flex-col gap-4 lg:p-8">
             <h3 class="font-black font-callout text-2xl">Strategy</h3>
             <p>
               After booking, we'll get on a call and really dive into what you
@@ -239,9 +237,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
           <span class="text-accent">03</span>
-          <div class="flex flex-col gap-4  p-8">
+          <div class="flex flex-col gap-4 lg:p-8">
             <h3 class="font-black font-callout text-2xl">Preparation</h3>
             <p>
               After getting our plan in place, we'll kick off some time for
@@ -255,9 +253,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
           <span class="text-accent">04</span>
-          <div class="flex flex-col gap-4  p-8">
+          <div class="flex flex-col gap-4 lg:p-8">
             <h3 class="font-black font-callout text-2xl">Development</h3>
             <p>
               Once all the branding and assets are good to go, I'll start
@@ -269,9 +267,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
           <span class="text-accent">05</span>
-          <div class="flex flex-col gap-4  p-8">
+          <div class="flex flex-col gap-4 lg:p-8">
             <h3 class="font-black font-callout text-2xl">Launch</h3>
             <p>
               I wrap up any final tweaks, you'll make your final payment, and
@@ -279,9 +277,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             </p>
           </div>
         </li>
-        <li class="flex gap-8 align-center items-center border-t border-light/15">
+        <li class="flex gap-8 align-center items-center border-t border-light/15 flex-wrap lg:flex-nowrap py-8">
           <span class="text-accent">06</span>
-          <div class="flex flex-col gap-4  p-8">
+          <div class="flex flex-col gap-4  lg:p-8">
             <h3 class="font-black font-callout text-2xl">Support</h3>
             <p>
               All clients get two weeks of free email support after launch.
@@ -300,7 +298,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
       </ol>
 
     </section>
-    <section class=" py-16 flex justify-start lg:justify-center">
+    <section class=" lg:py-16 flex justify-start lg:justify-center">
       <div class="flex flex-col gap-8 flex-1 px-8 lg:px-16 pt-16 pb-8 max-w-[1200px]">
         <h2 class="text-4xl font-black font-callout pb-8" id="contact">
           Let's talk!
