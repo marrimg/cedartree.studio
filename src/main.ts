@@ -23,7 +23,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           <a href="#about" class="menu-item  hover:text-accent-hover">About</a>
           <a href="#services" class="menu-item hover:text-accent-hover">Services</a>
           <a href="#process" class="menu-item  hover:text-accent-hover">Process</a>
-          <a class="menu-item hover:text-accent-hover" href="#contact">Get in touch</a>
+          <a class="menu-item hover:text-accent-hover" href="#contact">Get started</a>
         </div>
       </div>
       <div class="flex items-center justify-between gap-16 text-sm w-full h-[75px] px-8">
@@ -35,7 +35,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
             <a href="#process" class="menu-item hover:text-accent-hover">Process</a>
           </div>
           <div class="grow-0 shrink-0 basis-auto hover:text-accent-hover px-12">
-            <a href="#contact">Get in touch</a>
+            <a href="#contact">Get started</a>
           </div>
         </div>
         <div class="lg:hidden flex items-center justify-center">
@@ -69,7 +69,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           <div class="flex items-center justify-center">
             <a href="#contact"
               class="bg-accent px-8 py-4 text-light font-medium hover:accent/80 rounded-full hover:bg-accent/90">Get
-              in touch</a>
+              started</a>
           </div>
         </div>
       </div>
