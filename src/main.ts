@@ -316,13 +316,13 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML =
           <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4 lg:flex-6">
           <input type="hidden" name="access_key" value="5be9706e-e6ef-420b-9fd5-41e1124cdc67">
           <input type="checkbox" name="botcheck" id="" class="hidden" style="display: none;" />
-            <div class="form-group flex gap-4">
-              <div class="flex flex-col gap-2 flex-1">
+            <div class="form-group flex gap-4 flex-wrap">
+              <div class="flex flex-col gap-2 w-full lg:flex-1">
                 <label for="first-name">First name *</label>
                 <input maxLength="30" type="text" id="first-name" name="first-name" required
                   class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
               </div>
-              <div class="flex flex-col gap-2  flex-1">
+              <div class="flex flex-col gap-2 w-full lg:flex-1">
                 <label for="last-name">Last name *</label>
                 <input type="text" id="last-name" maxLength="30" name="last-name" required
                   class="border border-dark/70 rounded-md px-3 py-2 focus:outline-none focus:border-accent hover:border-accent/85 w-full" />
